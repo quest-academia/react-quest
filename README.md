@@ -32,7 +32,9 @@ copyhtmlのディレクトリの中に第1回の課題は
 <br>
 https://it.all-integration.com/　<br>のサイトの模写です。
 
-※条件はHTMLだけです。作業時間は10時間で以内お願いします。
+※条件は提出物はhtml/cssでお願いいたします。JavaScriptとかjQueryは不要です
+<br>
+作業時間は10時間で以内お願いします。
 <br>
 （超えてしまったら途中までで大丈夫です）
 
