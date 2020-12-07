@@ -1,0 +1,34 @@
+body {
+  font-family: Arial;
+}
+
+.container {
+  Color: #555555;
+  font-size: 12px;
+  font: Arial;
+}
+
+p {
+  Color: #555555;
+  font-size: 18px;
+  font: Arial;
+  float: left;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+ul {
+  text-align: center;
+  float: right;
+  padding-top: 8px;
+  padding-bottom: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+li {
+  list-style: none;
+  margin: 0 20px;
+  font-size: 12px;
+  float: left;
+}
