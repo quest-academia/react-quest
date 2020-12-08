@@ -1,11 +1,11 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+  
+
 body {
   font-family: Arial;
-}
-
-.container {
-  Color: #555555;
-  font-size: 12px;
-  font: Arial;
 }
 
 p {
@@ -13,17 +13,15 @@ p {
   font-size: 18px;
   font: Arial;
   float: left;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-top: 25px;
+  padding-left: 50px;
 }
 
 ul {
   text-align: center;
   float: right;
-  padding-top: 8px;
-  padding-bottom: 10px;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-top: 25px;
+  padding-right: 50px;
 }
 
 li {
@@ -31,4 +29,34 @@ li {
   margin: 0 20px;
   font-size: 12px;
   float: left;
+}
+
+h1 {
+  Color: #FFFFFF;
+  text-align: center;
+  margin-top: 180px;
+  font-size: 53px;
+  font: Arial;
+}
+
+.container {
+  background: #FFFFFF;
+  Color: #555555;
+  font-size: 12px;
+  font: Arial;
+  max-width: 100%;
+  z-index: 1;
+  height: 70px;
+}
+
+.title {
+  background: linear-gradient(45deg,rgba(93,163,27,1) 0%,#9fbf06 100%);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 518px;
+  width: auto;
 }
