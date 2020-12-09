@@ -583,7 +583,7 @@ input {
   border: none;
   border-radius: 3px;
   background-color: #e91e63;
-  background-image: url("/assets/images/search.svg");
+  background-image: url("../assets/images/search.svg");
   background-size: 18px auto;
   background-position: center;
   background-repeat: no-repeat;
@@ -602,7 +602,7 @@ input {
   width: 1.4rem;
   height: 1.4rem;
   margin-left: 1rem;
-  background-image: url("/assets/images/twitter.svg");
+  background-image: url("../assets/images/twitter.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -612,7 +612,7 @@ input {
   width: 0.7rem;
   height: 1.4rem;
   margin-left: 1.2rem;
-  background-image: url("/assets/images/facebook.svg");
+  background-image: url("../assets/images/facebook.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
