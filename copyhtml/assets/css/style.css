@@ -295,10 +295,10 @@ input {
   justify-content: space-between;
   align-items: flex-start;
   width: calc(100% - 30px);
-  max-width: 117rem;
+  max-width: 116rem;
   margin-right: auto;
   margin-left: auto;
-  padding-bottom: 7rem;
+  padding-bottom: 14rem;
 }
 
 .footer {
@@ -312,7 +312,7 @@ input {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 117rem;
+  width: 114rem;
   margin-right: auto;
   margin-left: auto;
 }
@@ -348,7 +348,7 @@ input {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 117rem;
+  width: 114rem;
   margin-right: auto;
   margin-left: auto;
 }
@@ -394,6 +394,7 @@ input {
 }
 .archives .archives__list {
   margin-top: 1rem;
+  margin-left: 0.8rem;
 }
 .archives .archives__list li {
   padding-top: 0.3rem;
@@ -437,7 +438,7 @@ input {
   color: #ff9800;
 }
 .article .article__list li:nth-child(6n + 5) .article__category {
-  color: #00bcd4;
+  color: #e91e63;
 }
 .article .article__list li:nth-child(6n) .article__category {
   color: #4caf50;
@@ -523,9 +524,12 @@ input {
 .category {
   margin-top: 5rem;
 }
+
 .category .category__list {
   margin-top: 1rem;
+  margin-left: 0.6rem;
 }
+
 .category .category__list li {
   padding-top: 0.3rem;
   padding-bottom: 0.3rem;
@@ -583,7 +587,7 @@ input {
   border: none;
   border-radius: 3px;
   background-color: #e91e63;
-  background-image: url("../assets/images/search.svg");
+  background-image: url("../images/search.svg");
   background-size: 18px auto;
   background-position: center;
   background-repeat: no-repeat;
@@ -597,26 +601,63 @@ input {
 .sns {
   margin-top: 2rem;
 }
+
 .sns .sns__list li.--twitter a {
   display: block;
   width: 1.4rem;
   height: 1.4rem;
   margin-left: 1rem;
-  background-image: url("../assets/images/twitter.svg");
+  background-image: url("../images/twitter.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
+
 .sns .sns__list li.--facebook a {
   display: block;
   width: 0.7rem;
   height: 1.4rem;
   margin-left: 1.2rem;
-  background-image: url("../assets/images/facebook.svg");
+  background-image: url("../images/facebook.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .sns .sns__list li + li {
   margin-top: 1.8rem;
+}
+
+.slide {
+  margin-top: 3rem;
+}
+
+.slide h3 {
+}
+
+.slide__list {
+  display: flex;
+  /* position: relative; */
+  margin-top: 1.4rem;
+}
+
+.slide__list li {
+  /* position: absolute; */
+  top: 0;
+  width: 26.2rem;
+  height: 17.5rem;
+  margin-right: 1.6rem;
+}
+
+.slide__text {
+  color: #23527c;
+  font-size: 1.5rem;
+  line-height: 2;
+  text-align: center;
+}
+
+.slide__title {
+  color: #23527c;
+  font-size: 1.8rem;
+  line-height: 2.5;
+  text-align: center;
 }
