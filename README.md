@@ -6,13 +6,32 @@
 
 ### step 1　git cloneをする
 まずターミナルかGit bashで
-`git clone -b develop https://github.com/quest-academia/react-quest.git`
+
+```console
+$ git clone -b develop https://github.com/quest-academia/react-quest.git
+```
+
 でcloneを行います
 <br>
 次に
-`git branch` で現在のブランチを確認します.
 
-ここでブランチ名がdevelopブランチにいなっているかと思います。
+```console
+$ git branch
+```
+
+で現在のブランチを確認します.
+下記のように表示されればOKです。
+
+```
+On branch develop
+```
+
+`main` になっている場合は、developに変更ください
+
+```console
+$ git fetch
+$ git checkout develop
+```
 
 ### step 2　ブランチを作成
 ブランチを作成することを「ブランチを切る」といいます。  
@@ -26,7 +45,13 @@
 
 ### step 3　実際の課題を取り組む
 
-課題に取り組む際には`git clone` でReadme.mdとcopyhtmlのディレクトリがあると思います。
+課題に取り組む際には
+
+```console
+$ git clone 
+```
+
+でReadme.mdとcopyhtmlのディレクトリがあると思います。
 
 copyhtmlのディレクトリの中に第1回の課題は
 <br>
@@ -42,8 +67,15 @@ https://it.all-integration.com/　<br>のサイトの模写です。
 ファイル名は `slack名_kadai1.html` でお願いします。
  例：kyohei_kadai1.htmlみたいに作成してくださいね
  
- 保存場所は`pwd`とターミナルで入力して
+ 保存場所は
+ 
+ ```console
+ pwd
+ ```
+
+ とターミナルで入力して
  <br>
+ 
  `react-quest/copyhtml`と結果が出てたらokです
 
 ### step 4　課題提出 PullRequest について
@@ -59,13 +91,32 @@ https://it.all-integration.com/　<br>のサイトの模写です。
 <br>
  まずは作業ブランチを Githubへpushお願いします
 ターミナルでのやり方
-`git branch`でbranch名を確認
+
+```console
+$ git branch
+```
+でbranch名を確認
+
 <br>
-`git add ファイル名`
+
+```console
+$ git add ファイル名
+```
+
 <br>
-`git commit -m "コミットメッセージ"`　※コミットメッセージは日本語でお願いいたします。
+
+```console
+$ git commit -m "コミットメッセージ"
+```
+
+※コミットメッセージは日本語でお願いいたします。
+
 <br>
-`git push orirgin feature/(slack名)`
+
+```console
+$ git push orirgin feature/(slack名)
+```
+
 <br>
 でpush完了です！
 
@@ -74,8 +125,8 @@ https://it.all-integration.com/　<br>のサイトの模写です。
 gitHub > Pull Request にて PR を作成。取り込み先(base) : develop(ブランチを切ったもと) でお願いいたします
 
 1. gitHub > Pull Request にて PR を作成。取り込み先(base) : develop(ブランチを切ったもと) でお願いいたします
-1. PR のタイトルは issue タイトルと同じにすること（コピペしましょう）
-1. 右側に ReviewersがありますのでそこをShiotaYoshiakiでお願いいたします。
+2. PR のタイトルは issue タイトルと同じにすること（コピペしましょう）
+3. 右側に ReviewersがありますのでそこをShiotaYoshiakiでお願いいたします。
 
 
 以上になります.これで09-react-quest課題提出チャンネルで課題が提出したことをしおたさんにメンションをつけて
