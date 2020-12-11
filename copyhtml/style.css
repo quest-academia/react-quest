@@ -1,7 +1,6 @@
 .oneArea {
 
     background: linear-gradient(180deg, #90B80E 0%, #90B80E 50%, #DDDDDD 50%, #DDDDDD 100%);
-    
     }
 
 .card {
@@ -15,4 +14,12 @@ li {
 
 .pagination{
     border-radius: 50%;
+}
+
+.nav-link1{
+    color: black;
+}
+
+.nav-link2{
+    color:white;
 }
