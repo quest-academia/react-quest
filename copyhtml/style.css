@@ -7,8 +7,13 @@ h1 {
     margin: 10px 0px;
 }
 
+h2 {
+    margin: 10px 0px;
+}
+
 p {
     margin: 10px 0px;
+    font-size: 15px;
 }
 
 header {
@@ -89,8 +94,7 @@ header {
 }
 
 .body-main{
-    margin: 10px;
-    padding: 130px 10px 0px 10px;
+    padding: 130px 10px 0px 0px;
     overflow: hidden;
 }
 
@@ -99,9 +103,20 @@ header {
     width: 75%;
 }
 
+.body-main-left img {
+    border-radius: 5px;
+}
+
 .contents-container {
     display: flex;
-    margin: 0px 100px 100px 0px;
+    margin: 0px 100px 50px 0px;
+}
+
+.photo-block {
+    box-shadow: 2px 2px 30px -3px gray;
+    height: 240px;
+    margin-left: 20px;
+    border-radius: 5px;
 }
 
 .text-block {
@@ -110,16 +125,13 @@ header {
 
 .community-container {
     margin-bottom: 100px;
+    margin-left: 20px;
 }
 
 .community-url {
     color: orange;
     margin: 0;
     text-decoration: none;
-}
-
-.community-title {
-    margin: 0;
 }
 
 .pagination-container {
@@ -149,14 +161,7 @@ header {
 }
 
 .teacher-name {
-    margin: 0;
     font-weight: bold;
-}
-
-.normal-text {
-    margin: 10px;
-    font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 #icon {
@@ -185,10 +190,6 @@ header {
     border-radius: 10px;
 }
 
-.search-title {
-    margin: 0px;
-}
-
 #category {
     list-style: none;
     padding: 0 0 0 20px;
@@ -208,7 +209,6 @@ header {
     margin: 15px 0px 15px 0px;
     text-align: left;
 }
-
 
 footer {
     position: relative;
