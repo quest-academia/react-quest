@@ -298,7 +298,7 @@ input {
   max-width: 116rem;
   margin-right: auto;
   margin-left: auto;
-  padding-bottom: 14rem;
+  padding-bottom: 9rem;
 }
 
 .footer {
@@ -660,4 +660,41 @@ input {
   font-size: 1.8rem;
   line-height: 2.5;
   text-align: center;
+}
+
+.pagenation {
+  display: flex;
+  justify-content: center;
+  margin-top: 4.6rem;
+}
+
+.pagenation li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  color: #999;
+}
+
+.pagenation li a {
+  margin-right: 1.4rem;
+  margin-left: 1.4rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.pagenation li.--active {
+  width: 3rem;
+  height: 3rem;
+  background-color: #e91e63;
+  color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 14px 26px -12px rgba(233, 30, 99, 0.42),
+    0 4px 23px 0 rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(233, 30, 99, 0.2);
+  font-size: 1.2rem;
+}
+
+.pagenation li.next-text a {
+  margin-left: 0;
 }
