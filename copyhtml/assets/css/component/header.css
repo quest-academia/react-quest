@@ -1,0 +1,65 @@
+/* PC */
+body {
+  width: 100%;
+  height: 70px;
+  /* background-color: #eee; */
+  margin: 0;
+  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);;
+}
+
+.container {
+  width: 940px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 15px 10px 15px;
+}
+
+.site-name {
+  padding: 10px 0px 10px 0px;
+  flex: 1;
+}
+
+.site-name-button {
+  font-size: 18px;
+  color: #555555;
+}
+
+.menu-button {
+  padding: 15px;
+  font-size: 15px;
+  color: #555555;
+}
+
+.site-name a {
+  text-decoration: none;
+}
+
+.top-menu-button a {
+  text-decoration: none;
+}
+
+/* タブレット */
+@media screen and (max-width: 991px) {
+  .container {
+    width: 720px;
+  }
+}
+
+/* ヘッダーのメニューバーが変わる位置 */
+/* 横の背景が消える位置 */
+@media screen and (max-width: 764px) {
+  .container {
+    width: auto;
+    padding: 10px 15px 10px 15px;
+  }
+}
+
+/* スマホ */
+@media screen and (max-width: 480px) {
+  .container {
+    width: auto;
+  }
+}
+
+

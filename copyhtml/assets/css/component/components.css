@@ -1,14 +1,7 @@
 /* PC */
-.flexbox {
-  display: flex;
-}
-
-.mg0 {
-  margin: 0px;
-}
-
-.pd0 {
-  padding: 0px;
+.header-component iframe{
+  width: 100%;
+  height: 70px;
 }
 
 /* タブレット */
