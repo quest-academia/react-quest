@@ -1,0 +1,53 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+p{
+  font-size: 12x; 
+}
+
+.nav-item{
+  font-size: 12px;
+}
+main{
+  background-color: #E1E1E1;
+}
+.content-header{
+  background-color: #7DB111;
+  background: linear-gradient(to right, #67A718, #97BC09); /*右にグラデーション */
+  height: 400px;
+}
+.content-header h1{
+  color: white;
+  font-size: 53px;
+  padding-top: 150px;
+}
+.content{
+  background-color: white;
+  border-radius: 1em;
+  box-shadow: 0 10px 25px 0 #D0D0D0;
+  position:relative;top:-100px;
+} 
+.card{
+  border: none;
+}
+.pagination > li > a{
+  border: none;  
+}
+.pagination>.active>.page-link {
+  border-style: none;
+  background-color: #E91E63; 
+  border-radius: 50%;     /*角を丸くする*/
+}
+.list-unstyled li{
+  line-height: 2.5;
+}
+.fa-search{
+  background-color: #E91E63;
+  color: white
+}
+footer{
+  height: 6rem;
+}
+footer a,span{
+  color: #B8B8B9;
+}
