@@ -11,6 +11,22 @@
   padding: 0px;
 }
 
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.hei0 {
+  height: 0px;
+}
+
 /* タブレット */
 @media screen and (max-width: 991px) {
   
