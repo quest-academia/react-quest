@@ -48,10 +48,10 @@ $ git checkout develop
 課題に取り組む際には
 
 ```console
-$ git clone 
+$ ls -l
 ```
 
-でReadme.mdとcopyhtmlのディレクトリがあると思います。
+を入力いただくと、でReadme.mdとcopyhtmlのディレクトリがあると思います。
 
 copyhtmlのディレクトリの中に第1回の課題は
 <br>
@@ -70,7 +70,7 @@ https://it.all-integration.com/　<br>のサイトの模写です。
  保存場所は
  
  ```console
- pwd
+ $ pwd
  ```
 
  とターミナルで入力して
