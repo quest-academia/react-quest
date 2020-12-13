@@ -69,7 +69,7 @@ h2 {
   width: auto;
 }
 
-.contents {
+.rayout {
   background: #FFFFFF;
   width: 97%;
   height: 100%;
@@ -81,6 +81,11 @@ h2 {
   margin-right: auto;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+}
+
+.contents {
+  width: 1000px;
+  float: left;
 }
 
 .content {
@@ -102,7 +107,7 @@ h2 {
   width: 360px;
   height: 240px;
   padding-top: 20px;
-  padding-left: 100px;
+  padding-left: 50px;
   z-index: 1;
   filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.6));
 }
@@ -127,7 +132,7 @@ h2 {
 .article-info {
   float: right;
   padding-top: 20px;
-  padding-right: 120px;
+  padding-left: 0px;
   padding-bottom: 100px;
 }
 
@@ -158,4 +163,13 @@ footer {
   padding-top: 40px;
   padding-right: 50px;
   font-size: 14px;
+}
+
+.side-bar {
+  float: right;
+  width: 300px;
+}
+
+.profile-img {
+  padding-top: 100px;
 }
