@@ -45,6 +45,16 @@
   top: 370px;
 }
 
+.new-articles {
+  width: 749.990px;
+  height: 2502.140px;
+}
+
+.new-articles iframe {
+  width: 749.990px;
+  height: 2502.140px;
+}
+
 @media screen and (max-width: 1188px) {
   .contents-component {
     width: calc(100% - 30px);
@@ -61,6 +71,16 @@
     z-index: 1;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .new-articles {
+    width: 616.667px;
+    height: 2363.820px;
+  }
+  
+  .new-articles iframe {
+    width: 616.667px;
+    height: 2363.820px;
   }
 }
 
@@ -82,6 +102,16 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+  .new-articles {
+    width: 720px;
+    height: 2697.220px;
+  }
+  
+  .new-articles iframe {
+    width: 720px;
+    height: 2697.220px;
+  }
 }
 
 /* ヘッダーのメニューバーが変わる位置 */
@@ -102,6 +132,16 @@
     z-index: 1;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .new-articles {
+    width: 720px;
+    height: 2697.220px;
+  }
+  
+  .new-articles iframe {
+    width: 720px;
+    height: 2697.220px;
   }
 }
 
