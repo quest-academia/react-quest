@@ -130,3 +130,32 @@ h2 {
   padding-right: 120px;
   padding-bottom: 100px;
 }
+
+footer {
+  Color: #FFFFFF;
+  background-color: #323437;
+  height: 100px;
+}
+
+.footer-ul {
+  text-align: center;
+  float: left;
+  padding-top: 40px;
+  padding-left: 50px;
+}
+
+.footer-li {
+  list-style: none;
+  margin: 0 20px;
+  font-size: 12px;
+  float: left;
+}
+
+.salon-name {
+  Color: #FFFFFF;
+  font: Arial;
+  float: right;
+  padding-top: 40px;
+  padding-right: 50px;
+  font-size: 14px;
+}
