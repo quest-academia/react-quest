@@ -32,6 +32,26 @@ h2 {
   font: Arial;
 }
 
+h5 {
+  font-size: 18px;
+  font: Arial;
+}
+
+.search-box {
+  padding-top: 7px;
+  width: 200px;
+  height: 20px;
+  border: none;
+  border-bottom:1px solid #cccccc;
+  float: left;
+}
+
+.search-button {
+  background-color: #E91E63;
+  width: 12%;
+  height: 12%;
+}
+
 .header-ul {
   text-align: center;
   float: right;
@@ -139,6 +159,7 @@ h2 {
 footer {
   Color: #FFFFFF;
   background-color: #323437;
+  width: 100%;
   height: 100px;
 }
 
@@ -180,4 +201,15 @@ footer {
   padding-bottom: 10px;
   width: 5%;
   height: 5%;
+}
+
+.side-bar-content {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.category-li {
+  font-size: 14px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
