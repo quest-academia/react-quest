@@ -13,18 +13,8 @@ body {
   height: 100%;
 }
 
-ul {
-  text-align: center;
-  float: right;
-  padding-top: 25px;
-  padding-right: 50px;
-}
-
 li {
   list-style: none;
-  margin: 0 20px;
-  font-size: 12px;
-  float: left;
 }
 
 h1 {
@@ -40,6 +30,20 @@ h2 {
   margin-bottom: 6px;
   font-size: 26px;
   font: Arial;
+}
+
+.header-ul {
+  text-align: center;
+  float: right;
+  padding-top: 25px;
+  padding-right: 50px;
+}
+
+.header-li {
+  list-style: none;
+  margin: 0 20px;
+  font-size: 12px;
+  float: left;
 }
 
 .container {
@@ -124,4 +128,5 @@ h2 {
   float: right;
   padding-top: 20px;
   padding-right: 120px;
+  padding-bottom: 100px;
 }
