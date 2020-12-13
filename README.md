@@ -39,9 +39,16 @@ $ git checkout develop
 
 ブランチ名も統一します。今回の命名規則は以下です。
 
-### ブランチ命名規則
+#### ブランチ命名規則
 `feature/(slack名)`  でお願いいたします
 ※記載例 `feature/kyohei` 
+
+#### ブランチ作成方法
+
+```console
+$ git checkout -b feature/(slack名)
+```
+
 
 ### step 3　実際の課題を取り組む
 
