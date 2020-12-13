@@ -1,6 +1,7 @@
 * {
   font-size: 14px;
 }
+/* headerスタイル */
 header {
   filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.6));
   position: fixed;
@@ -15,12 +16,22 @@ header {
 .header_container {
   padding: 10px 15px;
 }
+.navbar-toggler {
+  border: none;
+}
+.navbar-toggler-icon {
+  font-size: 17px;
+  color: #555;
+}
 /* 全ての記事、自己紹介文の内容 */
 .content {
   color: #999;
 }
 .content a {
   color: #999;
+}
+.content a span {
+  color: #23527c;
 }
 .header_menu_container {
   justify-content: flex-end;
@@ -113,4 +124,13 @@ footer {
 /* 色 */
 .cyan {
   color: #89229b;
+}
+.light_blue {
+  color: #00bcd4;
+}
+.red {
+  color: #f44336;
+}
+.orange {
+  color: #ff9800;
 }
