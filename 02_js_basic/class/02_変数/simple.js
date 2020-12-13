@@ -19,5 +19,5 @@ const string = 'string param';
 
 const numberString = '2';
 const numberParam = 2;
-console.log(numberString)
-console.log(numberParam);
+// console.log(numberString)
+// console.log(numberParam);

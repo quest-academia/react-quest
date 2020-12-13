@@ -1,8 +1,9 @@
 const first = true;
-// console.log('first: ' + first);
+// console.log(typeof first);
 
 const second = false;
-// console.log('second: ' + second);
+// console.log(typeof second);
+
 
 /**
  * 文字列が完全に同じ

@@ -4,7 +4,7 @@ const sampleArray = ['first', 'second', 'third'];
 /**
  * 要素番号を指定することで、要素を取得することができる
  */
-// console.log(sampleArray[1]);
+// console.log(sampleArray[2]);
 
 /**
  * lengthを使用することで、要素数を取得することができる
