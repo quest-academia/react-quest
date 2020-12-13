@@ -20,6 +20,7 @@ console.log();
 
 /**
  * 問3. test3からtargetをconsoleで表示してください
+ * なお、文字列型で出力してください
  */
 const test3 = {
   a: {
@@ -40,3 +41,12 @@ console.log();
 
 const yourPro = {};
 console.log(yourPro);
+
+/**
+ * 問5. test5オブジェクトのsampleに紐づく値'test'の
+ * 値を'react-quest'に変更してください
+ */
+const test5 = {
+  sample: "test",
+};
+console.log();
