@@ -562,8 +562,6 @@ input {
   border-right: none;
   border-left: none;
   border-bottom: 1px solid #aaa;
-  /* IE */
-  /* Edge */
 }
 .search .search__form::-moz-placeholder {
   color: #d1d1d1;
@@ -636,12 +634,10 @@ input {
 
 .slide__list {
   display: flex;
-  /* position: relative; */
   margin-top: 1.4rem;
 }
 
 .slide__list li {
-  /* position: absolute; */
   top: 0;
   width: 26.2rem;
   height: 17.5rem;
