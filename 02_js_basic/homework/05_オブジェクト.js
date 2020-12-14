@@ -59,4 +59,5 @@ console.log(yourPro);
 const test5 = {
   sample: "test",
 };
-console.log();
+test5.sample = "react-quest"
+console.log(test5);
