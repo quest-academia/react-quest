@@ -46,4 +46,5 @@ console.log(test5.map(v => v + targetNum));
  */
 const headParam = 'ps';
 const test6 = ['ps2', 'switch', 'ps3', 'psp', 'game cube'];
-console.log(test6.filter(v => v.indexOf(headParam) > -1));
+console.log(test6.filter(v => v.indexOf(headParam) === 0)); 
+console.log(test6.filter(v => v.startsWith(headParam))); // starsWithはES6以降で可能
