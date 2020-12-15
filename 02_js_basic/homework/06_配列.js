@@ -29,7 +29,7 @@ console.log(test3.findIndex((target) => target === targetParam));
  */
 const test4 = [1, 2, 3, 4, 5];
 
-test4.forEach(element => console.log(element));
+test4.forEach((element) => console.log(element));
 
 /**
  * 問5. 配列test5に含まれている数字に、
