@@ -21,7 +21,7 @@ console.log(test2[0].name);
  */
 const targetParam = 'target';
 const test3 = ['test', 'value', 'target'];
-console.log (test3.findIndex(element => element===targetParam));
+console.log (test3.findIndex(aho => aho===targetParam));
 
 /**
  * 問4. 配列test4の中にある要素をconsoleで個別に表示してください
@@ -29,7 +29,7 @@ console.log (test3.findIndex(element => element===targetParam));
  */
 const test4 = [1, 2, 3, 4, 5];
 
-test4.forEach(element => console.log(element));
+test4.forEach(aho => console.log(aho));
 
 /**
  * 問5. 配列test5に含まれている数字に、
@@ -48,4 +48,5 @@ console.log(test5.map(y => y + targetNum));
  */
 const headParam = 'ps';
 const test6 = ['ps2', 'switch', 'ps3', 'psp', 'game cube'];
-console.log(test6.filter((str) => str.startsWith(headParam)));
+console.log(test6.filter((aho) => aho.indexOf(headParam) ===0 ));
+console.log(test6.filter((aho) => aho.startsWith(headParam)));
