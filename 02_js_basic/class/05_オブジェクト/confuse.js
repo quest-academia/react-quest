@@ -9,6 +9,6 @@ const sampleObj = {
 
 const getKey = 'key';
 
-// console.log(sampleObj[getKey]);
+console.log(sampleObj[getKey]);
 
 // console.log(Object.values(sampleObj));

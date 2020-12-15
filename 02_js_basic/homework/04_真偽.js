@@ -10,6 +10,8 @@ const num = 6;
 const zero = 0;
 // console.log('zero: ' + !!zero);
 
+//※falseになる理由0, -0, null, false, NaN, undefined あるいは空文字列 ("") であった場合、オブジェクトは false の初期値を持つから
+
 const emptyString = '';
 // console.log('emptyString: ' + !!emptyString);
 
