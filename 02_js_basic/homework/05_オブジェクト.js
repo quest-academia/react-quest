@@ -7,7 +7,7 @@ const test1 = {
     prop: ['target'],
   },
 };
-// console.log(test1['obj'] ['prop'] [0]);
+ console.log(test1['obj'] ['prop'] [0]);
 
 /**
  * 問2. test2からobjectのプロパティを配列で取得してください
@@ -16,7 +16,7 @@ const test2 = {
   sample: 'test',
   dummy: 'value',
 };
-// console.log(Object.values(test2));
+ console.log(Object.values(test2));
 
 /**
  * 問3. test3からtargetをconsoleで表示してください
@@ -33,7 +33,7 @@ const test3 = {
     },
   },
 };
-// console.log(Object.keys(test3.a.b.c.d)[0]);
+ console.log(Object.keys(test3.a.b.c.d)[0]);
 
 /**
  * 問4. あなたのプロフィールをオブジェクトで表現してください
