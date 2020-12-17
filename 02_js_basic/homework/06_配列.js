@@ -37,7 +37,7 @@ test4.forEach((num) => console.log(num))
  */
 const targetNum = 4;
 const test5 = [4, 5, 2, 7];
-const add4 = test5.map(num => num + targetNum); 
+const add4 = test5.map((num) => num + targetNum); 
 console.log(add4);
 
 /**
@@ -47,7 +47,7 @@ console.log(add4);
  */
 const headParam = 'ps';
 const test6 = ['ps2', 'switch', 'ps3', 'psp', 'game cube'];
-console.log(test6.filter(word => word.startsWith(headParam)));
+console.log(test6.filter((word) => word.startsWith(headParam)));
 
 
 
