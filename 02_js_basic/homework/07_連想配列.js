@@ -59,7 +59,7 @@ const test3 = [
   },
 ];
 const plus = 2;
-const addNum = test3.map(element => Number(element.value) + plus);
+const addNum = test3.map((element) => Number(element.value) + plus);
 console.log(addNum);
 
 /**
@@ -114,7 +114,7 @@ const test5 = [
     value: '2',
   },
 ];
-console.log(test5.find(elements => elements.value === getNum5));
+console.log(test5.find((elements) => elements.value === getNum5));
 
 /**
  * 問6. findとfilterの違いを答えてください
