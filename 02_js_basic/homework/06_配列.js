@@ -47,7 +47,7 @@ console.log(add4);
  */
 const headParam = 'ps';
 const test6 = ['ps2', 'switch', 'ps3', 'psp', 'game cube'];
-console.log(test6.filter((word) => word.startsWith(headParam)));
+console.log(test6.filter(word => word.startsWith(headParam)));
 
 
 
