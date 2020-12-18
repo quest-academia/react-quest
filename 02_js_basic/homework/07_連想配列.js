@@ -8,7 +8,7 @@ const test1 = [
     type: 'test',
   },
 ];
-// console.log(test1[0].name);
+console.log(test1[0].name);
 
 /**
  * 問2. 連想配列test2から
@@ -32,7 +32,7 @@ const test2 = [
     value: '4',
   },
 ];
-// console.log(test2[2]);
+ console.log(test2[2]);
 
 /**
  * 問3. 連想配列test3内にある
@@ -65,7 +65,7 @@ const newtest3 = test3.map((Obj) => {
     value: Number(Obj.value) + add,
   }
 });
-// console.log(newtest3);
+ console.log(newtest3);
 
 /**
  * 問4. 連想配列test4内にある
@@ -141,7 +141,7 @@ console.log(newTest5);
  */
 
 /**
- * 問6. 回答欄
+ * 問7. 回答欄
  * map:与えられた関数を配列のすべての要素に対して呼び出し、その結果からなる新しい配列を生成する
  * filter:与えられた条件に合格したすべての配列要素なる新しい配列を生成する
  *
