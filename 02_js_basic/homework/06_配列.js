@@ -2,26 +2,32 @@
  * 問1. targetを取り出してconsoleで表示してください
  */
 const test1 = ['target', 'dummy', 'hoge'];
-console.log();
+console.log(test1[0]);
 
 /**
  * 問2. targetを取り出してconsoleで表示してください
  */
-const test2 = [
-  {
-    name: 'target',
-    props: 'test',
-  }
-];
-console.log();
+const test2 = [{
+  name: 'target',
+  props: 'test',
+}];
+console.log(test2[0].name);
 
 /**
  * 問3. 配列test3より、変数targetParam内の値の要素番号を取り出してconsoleで表示してください
  * また、findIndexメソッドを使用してください
  */
-const targetParam = 'target';
-const test3 = ['test', 'value', 'target'];
-console.log();
+// const targetParam = 'target';
+// const test3 = ['test', 'value', 'target'];
+
+// let passIndex = result.findIndex(function(element){
+//   return element > 85;
+// });
+
+
+// console.log(targetParam);
+
+//できなかったです
 
 /**
  * 問4. 配列test4の中にある要素をconsoleで個別に表示してください
@@ -29,16 +35,32 @@ console.log();
  */
 const test4 = [1, 2, 3, 4, 5];
 
-console.log(test4);
+for (var i = 0; i < test4.length; i++) {
+
+  console.log(test4[i]);
+
+}
+
+
 
 /**
  * 問5. 配列test5に含まれている数字に、
  * 変数targetNum内の値を足し、新しい配列を作成してください
  * また、mapメソッドを使用してください
  */
-const targetNum = 4;
-const test5 = [4, 5, 2, 7];
-console.log();
+// const targetNum = 4;
+// const test5 = [4, 5, 2, 7];
+
+// let newArray = array.map(function( test5 ) {
+
+//   return test5 + 4;
+
+// })
+
+// console.log( newArray );
+
+//できなかったです
+
 
 /**
  * 問6. 配列test6に含まれている値より、
@@ -47,7 +69,10 @@ console.log();
  */
 const headParam = 'ps';
 const test6 = ['ps2', 'switch', 'ps3', 'psp', 'game cube'];
-console.log();
 
+var result = test6.filter( function( value ) {
+return value == headParam;
+})
+console.log(result);
 
-
+//できなかったです

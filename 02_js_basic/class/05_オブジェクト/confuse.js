@@ -7,8 +7,8 @@ const sampleObj = {
   value: 'valueName',
 };
 
-const getKey = 'key';
+const getKey = 'value';
 
 // console.log(sampleObj[getKey]);
 
-// console.log(Object.values(sampleObj));
+console.log(Object.values(sampleObj));

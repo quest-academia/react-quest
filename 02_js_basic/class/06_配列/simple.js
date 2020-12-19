@@ -16,4 +16,4 @@ const contentNum = sampleArray.length;
  * 存在しない番号を指定すると、
  * undefinedが返ってきます
  */
-// console.log(sampleArray[100]);
+console.log(sampleArray[100]);
