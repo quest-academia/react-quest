@@ -7,7 +7,7 @@ const test1 = {
     prop: ["target"],
   },
 };
-console.log();
+console.log(test1.obj.prop[0]);
 
 /**
  * 問2. test2からobjectのプロパティを配列で取得してください
@@ -16,7 +16,7 @@ const test2 = {
   sample: "test",
   dummy: "value",
 };
-console.log();
+console.log(Object.getOwnPropertyNames(test2));
 
 /**
  * 問3. test3からtargetをconsoleで表示してください
@@ -33,20 +33,26 @@ const test3 = {
     },
   },
 };
-console.log();
+console.log(test3.a.b.c.d.target);
 
 /**
  * 問4. あなたのプロフィールをオブジェクトで表現してください
  */
 
-const yourPro = {};
+const yourPro = {
+  name: "中澤夏実",
+  address: "Tokyo",
+  age: 26,
+};
 console.log(yourPro);
 
 /**
  * 問5. test5オブジェクトのsampleに紐づく値'test'の
  * 値を'react-quest'に変更してください
  */
-const test5 = {
+
+let test5 = {
   sample: "test",
 };
-console.log();
+test5.sample = "react-quest";
+console.log(test5);
