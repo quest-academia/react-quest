@@ -14,5 +14,6 @@ const testArray = [1, 2, 3, 4, 5];
  * 記載ミスが少なくて安全である
  */
 testArray.forEach((num) => {
+  console.log('--- in forEach')
   console.log(num);
 });

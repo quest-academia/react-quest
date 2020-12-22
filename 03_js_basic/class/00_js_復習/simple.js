@@ -40,9 +40,9 @@ const testArray = [
  * おすすめ
  * return を省略しないとconsoleで中身を確認しやすい
  */
-const withReturn = testArray.filter((data) => {
-  console.log(data);
-  return data.area === "東北";
-});
-console.log("withReturn");
-console.log(withReturn);
+// const withReturn = testArray.filter((data) => {
+//   console.log(data);
+//   return data.area === "東北";
+// });
+// console.log("withReturn");
+// console.log(withReturn);
