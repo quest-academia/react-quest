@@ -28,9 +28,7 @@ console.log(test3.findIndex(element => element === targetParam));
  * また、forEachメソッドを使用してください
  */
 const test4 = [1, 2, 3, 4, 5];
-test4.forEach(number => {
-  console.log(number);
-});
+test4.forEach(number => console.log(number));
 /**
  * 問5. 配列test5に含まれている数字に、
  * 変数targetNum内の値を足し、新しい配列を作成してください
@@ -38,9 +36,7 @@ test4.forEach(number => {
  */
 const targetNum = 4;
 const test5 = [4, 5, 2, 7];
-const result5 = test5.map(number => {
-  return number + targetNum;
-})
+const result5 = test5.map(number => number + targetNum);
 console.log(result5);
 
 /**

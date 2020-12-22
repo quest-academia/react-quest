@@ -33,7 +33,7 @@ const test3 = {
     },
   },
 };
-console.log(test3.a.b.c.d.target);
+console.log(Object.keys(test3.a.b.c.d[0]));
 
 /**
  * 問4. あなたのプロフィールをオブジェクトで表現してください
