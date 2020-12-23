@@ -8,7 +8,7 @@ const test1 = [
     type: 'test',
   },
 ];
-console.log();
+console.log(test1[0].name);
 
 /**
  * 問2. 連想配列test2から
@@ -32,7 +32,7 @@ const test2 = [
     value: '4',
   },
 ];
-console.log();
+console.log(test2[2]);
 
 /**
  * 問3. 連想配列test3内にある
@@ -58,7 +58,9 @@ const test3 = [
     value: '4',
   },
 ];
-console.log();
+const plus = 2;
+const addNum = test3.map((element) => Number(element.value) + plus);
+console.log(addNum);
 
 /**
  * 問4. 連想配列test4内にある
@@ -66,8 +68,8 @@ console.log();
  * consoleにて表示してください
  * また、filterを使用してください
  */
-const getNum =  '2';
-const test3 = [
+const getNum4 =  '2';
+const test4 = [
   {
     name: 'test1',
     value: '1',
@@ -85,7 +87,7 @@ const test3 = [
     value: '2',
   },
 ];
-console.log();
+console.log(test4.filter((element) => element.value === getNum4));
 
 /**
  * 問5. 連想配列test5内にある
@@ -93,8 +95,8 @@ console.log();
  * consoleにて表示してください
  * また、findを使用してください
  */
-const getNum =  '1';
-const test3 = [
+const getNum5 =  '1';
+const test5 = [
   {
     name: 'test1',
     value: '1',
@@ -112,7 +114,7 @@ const test3 = [
     value: '2',
   },
 ];
-console.log();
+console.log(test5.find((elements) => elements.value === getNum5));
 
 /**
  * 問6. findとfilterの違いを答えてください
@@ -120,8 +122,8 @@ console.log();
 
 /**
  * 問6. 回答欄
- * 
- * 
+ * findは配列から最初に条件に一致した値を返す
+ * filterは配列から条件に一致した全ての値を返す
  * 
  */
 
@@ -131,7 +133,8 @@ console.log();
 
 /**
  * 問6. 回答欄
- * 
+ * mapは配列の全ての要素を呼び出し、何か関数を実行した新しい結果から新たな配列を作る
+ * filterは配列の全ての要素を取り出し比較して、一致した全ての要素から新しい配列を作る
  * 
  * 
  */
