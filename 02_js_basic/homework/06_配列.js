@@ -68,4 +68,5 @@ answer5();
  */
 const headParam = "ps";
 const test6 = ["ps2", "switch", "ps3", "psp", "game cube"];
-console.log();
+const filtered = test6.filter((word) => word.indexOf(headParam) !== -1);
+console.log(filtered);
