@@ -4,8 +4,10 @@
  * なお、文字列結合は + を使用し、
  * あなたの名前は変数yourNameに入れてください
  */
-const yourName = "〇〇";
-console.log();
+const yourName = "shuho";
+console.log(`私の名前は${yourName}です`);
+console.log("私の名前は", yourName, "です");
+console.log("私の名前は" + yourName + "です");
 
 /**
  * 問2. 文字列 '私の趣味は〇〇と〇〇です' を
@@ -14,6 +16,6 @@ console.log();
  * あなたの趣味は変数hobby1, hobby2に入れてください
  */
 
-const hobby1 = "〇〇";
-const hobby2 = "〇〇";
-console.log();
+const hobby1 = "卓球";
+const hobby2 = "プログラミング ";
+console.log(`私の趣味は${hobby1}と${hobby2}です`);
