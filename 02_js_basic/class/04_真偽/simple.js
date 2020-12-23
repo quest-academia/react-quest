@@ -16,7 +16,7 @@ const four = 7 === '7';
 // console.log('four: ' + four);
 
 /**
- * 文字列のみ一致
+ * 文字列のみ一致(怒られるからやっちゃだめ)
  */
 const five = 7 == '7';
-// console.log('five: ' + five);
+console.log('five: ' + five);

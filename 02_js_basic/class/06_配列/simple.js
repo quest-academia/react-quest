@@ -10,10 +10,10 @@ const sampleArray = ['first', 'second', 'third'];
  * lengthを使用することで、要素数を取得することができる
  */
 const contentNum = sampleArray.length;
-// console.log(contentNum);
+console.log(contentNum);
 
 /**
  * 存在しない番号を指定すると、
  * undefinedが返ってきます
  */
-// console.log(sampleArray[100]);
+console.log(sampleArray[100]);

@@ -11,5 +11,4 @@ const multiply = two * three;
 // console.log(multiply);
 
 const devide = two / three;
-// console.log(devide)
-
+console.log(devide)
