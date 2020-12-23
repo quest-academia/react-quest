@@ -1,11 +1,19 @@
-console.log("---- before");
+// console.log("---- before");
 
-const noName = function () {
-  console.log("---- in 無名関数");
-};
+// const noName = function () {
+//   console.log("---- in 無名関数");
+// };
 
-console.log("---- after");
+// console.log("---- after");
 
-noName();
+// noName();
 
-console.log("----- fin");
+// console.log("----- fin");
+
+const withArgFunc = function(first, second, third) {
+  console.log(first);
+  console.log(second);
+  console.log(third);
+}
+
+withArgFunc('test', 'dummy');

@@ -42,7 +42,7 @@ const shiotaInfo = new Shiota();
  * Classの中身の値を変更する時には、
  * Class内に宣言した関数を使用する
  */
-// shiotaInfo.passOneYear();
+shiotaInfo.passOneYear();
 // console.log('---- after passOneYear()');
 // console.log('------ shiotaInfo.age')
 // console.log(shiotaInfo.age);
@@ -52,7 +52,7 @@ const shiotaInfo = new Shiota();
  * 同じクラスを使用していても、互いに影響しない
  * 新しいオブジェクトを作成することができる
  */
-// const nextShiota = new Shiota();
+const nextShiota = new Shiota();
 // console.log('--- 新しく宣言したnextShiotaのage');
 // console.log(nextShiota.age);
 // console.log('--- 今まで使用してきた、直前で関数で値を増やしたage')

@@ -1,6 +1,6 @@
 class Shiota {
   constructor(prop) {
-    console.log('---- in constructor')
+    // console.log('---- in constructor')
     this.age = 25;
     this.name = 'yoshiaki';
     this.arg = prop;
