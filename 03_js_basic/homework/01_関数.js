@@ -1,13 +1,17 @@
 /**
  * 問1. 宣言されたtest1関数を実行してください
  */
-function test1() {
-  console.log("----- これが出力されれば成功");
-}
+// function test1() {
+//   console.log('----- これが出力されれば成功');
+// }
+// test1();
 
 /**
  * 問2. 実行されるtest2関数を宣言してください。関数内ではconsoleで自分のslack名を出力してください
  */
+// function test2() {
+//   console.log('kyoheiきょへ');
+// }
 
 // test2();
 
@@ -16,13 +20,15 @@ function test1() {
  * 確認後、実行結果に対して、なぜこの実行結果になったのか説明してください
  */
 function test3() {
-  console.log("====================");
+  console.log('====================');
 }
 
 test3;
 /**
  * 問3. 回答欄
- *
+ *何も表示されていない
+  test3()にすれば実行結果が出てくる。
+  つまり引数が設定していないので、ただの文字と認識しているため
  *
  */
 
@@ -31,24 +37,27 @@ test3;
  * '引数を入れた実行結果'
  * という文字列が表示されるように引数を入れてください
  */
-function test4(arg) {
-  console.log(arg);
-}
+// function test4(arg) {
+//   console.log(arg);
+// }
 
-test4();
+// test4('引数を入れた実行結果');
 
 /**
  * 問5. 下記test5関数の引数にデフォルトの値を付与しました。
  * 引数のデフォルト値がどのような動きをするのか、検証の上、説明して下さい
  */
-function test5(arg = "default param") {
+function test5(arg = 'default param') {
   console.log(arg);
 }
 
 test5();
 /**
  * 問5. 回答欄
- *
+ *default paramと出力される！
+ argが引数として指定されており、戻り値を設定していなくても
+ 出力されるから
+
  *
  */
 
@@ -60,7 +69,7 @@ function test6(argFunc) {
   argFunc();
 }
 function testFunc() {
-  console.log("----- in test func");
+  console.log('----- in test func');
 }
 test6(testFunc);
 
@@ -74,26 +83,30 @@ test6(testFunc);
  * 問7. 下記test8の計算結果を変数result7に格納してください。
  * 問題文となるコードを変更して回答してください
  */
-let result7;
+
 function test7() {
-  return 8 + 9;
+  let result7 = 8 + 9;
+  return result7
 }
+const result7 = test7();
+console.log(result7);
 
 /**
  * 問8. 実行された場合、実行結果として2つの引数の数の和が返される関数test8を作成してください。
  * また、この問題は無名関数(即時関数)を使用し、アロー関数として記載してください
  */
 
-
-
 /**
  * 問9. 無名関数(即時関数)とは何か、説明して下さい
- */
+ *
+ /
 
 /**
  * 問9. 回答欄
- * 
- * 
+ *関数名なしで関数を定義できるものでreturnされる時に使う
+ 変数に関数の定義そのものを = で直接入れることができるようになるので
+ 1回きりしか使わない関数なので、名前をつける必要がない（=無名）ということ
+ *
  */
 
 /**
@@ -102,8 +115,9 @@ function test7() {
 
 /**
  * 問10. 回答欄
- * 
- * 
+ *複数の処理をひとまとまりにしたもの
+ *関数を使うメリット
+  用途ごとに処理を分割したり、似たような処理を何度も書かなくて済むようになる
  */
 
 /**
@@ -112,8 +126,8 @@ function test7() {
 
 /**
  * 問11. 回答欄
- * 
- * 
+ *number（数値）、string（文字列）、array（配列）など、あらゆる型（データ型を参照）を含む入れ物的な感じ
+ *宣言するとvarやletやconst
  */
 
 /**
@@ -122,6 +136,6 @@ function test7() {
 
 /**
  * 問12. 回答欄
- * 
- * 
+ *
+ *
  */
