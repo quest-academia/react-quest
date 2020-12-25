@@ -61,15 +61,11 @@ const test3 = [
   },
 ];
 
-const arraySum = test3.map(element => Number(element.value) + plus);
-
-let i = 0;
-arraySum.forEach(element => {
-  test3[i].value = String(element);
-  i++;
-});
-
+const arraySum = test3.map( element => Number(element.value) + plus );
+console.log(arraySum);
+arraySum.forEach((element, index) => test3[index].value = element);
 console.log(test3);
+
 
 /**
  * 問4. 連想配列test4内にある
@@ -97,10 +93,7 @@ const test4 = [
   },
 ];
 
-const filterValue = test4.filter(function(element){
-
-  return element.value === getNum;
-})
+const filterValue = test4.filter(element => element.value === getNum);
 
 console.log(filterValue);
 
@@ -130,10 +123,7 @@ const test5 = [
   },
 ];
 
-const findValue = test5.find(function(element){
-  return element.value === getNum2;
-})
-
+const findValue = test5.find(element => element.value === getNum2);
 console.log(findValue);
 
 
