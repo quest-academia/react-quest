@@ -50,9 +50,5 @@ console.log(addNum);
  */
 const headParam = "ps";
 const test6 = ["ps2", "switch", "ps3", "psp", "game cube"];
-const psValue = test6.filter((x) => {
-  if (x.indexOf("ps") !== -1) {
-    return x;
-  }
-});
+const psValue = test6.filter((x) => x.indexOf("ps") === 0);
 console.log("array:" + psValue);

@@ -8,6 +8,7 @@ const test1 = [
     type: "test",
   },
 ];
+console.log("*** test1");
 console.log(test1[0].name);
 
 /**
@@ -32,6 +33,7 @@ const test2 = [
     value: "4",
   },
 ];
+console.log("*** test2");
 console.log(test2[2]);
 
 /**
@@ -61,16 +63,13 @@ const test3 = [
   },
 ];
 
-// 最初はこの書き方をしましたが、mapメソッドを使うべきなのか迷い、mapメソッドを残しました。
-// let newArray = [];
-// test3.forEach((element) => {
-//   newArray.push({ name: element.name, value: Number(element.value) + plus });
-// });
+const newArray = test3.map((element) => ({
+  name: element.name,
+  value: Number(element.value) + plus,
+}));
 
-const newArray = test3.map((element) => Number(element.value) + plus);
-newArray.forEach((element) => {
-  console.log(element);
-});
+console.log("*** test3");
+console.log(newArray);
 
 /**
  * 問4. 連想配列test4内にある
@@ -98,13 +97,9 @@ const test4 = [
   },
 ];
 
-const filterdValue = test4.filter((x) => {
-  if (x.value === getNum) {
-    return x;
-  }
-});
-
-filterdValue.forEach((element) => {
+const filteredValue = test4.filter((x) => x.value === getNum);
+console.log("*** test4");
+filteredValue.forEach((element) => {
   console.log(element);
 });
 
@@ -136,6 +131,7 @@ const test5 = [
 
 const foundValue = test5.find((element) => element.value === getNum02);
 
+console.log("*** test5");
 console.log(foundValue);
 
 /**
