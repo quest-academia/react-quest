@@ -7,6 +7,7 @@ const test1 = {
     prop: ["target"],
   },
 };
+console.log("*** test1");
 console.log(test1.obj.prop[0]);
 
 /**
@@ -16,6 +17,7 @@ const test2 = {
   sample: "test",
   dummy: "value",
 };
+console.log("*** test2");
 console.log(Object.keys(test2));
 
 /**
@@ -33,6 +35,7 @@ const test3 = {
     },
   },
 };
+console.log("*** test3");
 console.log("*" + Object.keys(test3.a.b.c.d)[0]);
 
 /**
@@ -44,6 +47,7 @@ const yourPro = {
   address: "Tokyo",
   age: 26,
 };
+console.log("*** test4");
 console.log(yourPro);
 
 /**
@@ -55,4 +59,5 @@ let test5 = {
   sample: "test",
 };
 test5.sample = "react-quest";
+console.log("*** test5");
 console.log(test5);

@@ -2,6 +2,7 @@
  * 問1. targetを取り出してconsoleで表示してください
  */
 const test1 = ["target", "dummy", "hoge"];
+console.log("*** test1");
 console.log(test1[0]);
 
 /**
@@ -13,6 +14,7 @@ const test2 = [
     props: "test",
   },
 ];
+console.log("*** test2");
 console.log(test2[0].name);
 
 /**
@@ -23,6 +25,7 @@ const targetParam = "target";
 const test3 = ["test", "value", "target"];
 
 const findTarget = (element) => element === targetParam;
+console.log("*** test3");
 console.log(test3.findIndex(findTarget));
 
 /**
@@ -30,6 +33,7 @@ console.log(test3.findIndex(findTarget));
  * また、forEachメソッドを使用してください
  */
 const test4 = [1, 2, 3, 4, 5];
+console.log("*** test4");
 test4.forEach((element) => console.log(element));
 
 /**
@@ -40,7 +44,7 @@ test4.forEach((element) => console.log(element));
 const targetNum = 4;
 const test5 = [4, 5, 2, 7];
 const addNum = test5.map((x) => x + targetNum);
-
+console.log("*** test5");
 console.log(addNum);
 
 /**
@@ -51,4 +55,5 @@ console.log(addNum);
 const headParam = "ps";
 const test6 = ["ps2", "switch", "ps3", "psp", "game cube"];
 const psValue = test6.filter((x) => x.indexOf("ps") === 0);
+console.log("*** test6");
 console.log("array:" + psValue);
