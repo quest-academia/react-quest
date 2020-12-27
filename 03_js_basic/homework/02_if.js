@@ -9,8 +9,7 @@ if (test1 === 10) {
   console.log('ブッブー');
 }
 
-/**
- * 問2. 論理演算子を調査し、記載してください
+/**___
  */
 
 /**
@@ -18,9 +17,8 @@ if (test1 === 10) {
  *論理演算を表現する記号や符号のこと。真（true）と偽（false）の二値からなる真偽値
  （真理値/ブール値）に対して演算を行うこと。
  JSなら主に論理積AND(&&)や論理和 OR (||)や論理否定NOT (!)を主に用いる
-　優先順位が決まっている（ほとんどの場合NOT→AND→ORの順）で実行される
- * パターンが多い
- 　ちなみに論理演算はほかにも排他的論理和（XOR），否定論理責(NAND)，否定論理和(NOR)などがある。
+ 優先順位が決まっている（ほとんどの場合NOT→AND→ORの順）で実行されるパターンが多い
+ ※ちなみに論理演算はほかにも排他的論理和（XOR），否定論理責(NAND)，否定論理和(NOR)などがある。
  */
 
 /**
@@ -46,9 +44,10 @@ console.log(test3);
  * 問5. 三項演算子を使って、test5のconsoleでright paramを表示させてください。
  * 変数baseの値を変更して回答してください
  */
-const aho = undefined;
-const test5 = aho ? 'left param' : 'right param';
+const kasu = undefined;
+const test5 = kasu ? 'left param' : 'right param';
 console.log(test5);
+//※right paramになる理由オブジェクトは false の初期値を持つもののみ
 
 /**
  * 問6. if文とは何か、説明してください
@@ -56,7 +55,8 @@ console.log(test5);
 
 /**
  * 問6. 回答欄
- *
+ *真理値に従って「もしXならば、Yせよ、さもなくばZせよ」というような条件に応じて
+ *trueかfalseを分岐する文で実行内容が変化することができるやつ
  *
  *
  */

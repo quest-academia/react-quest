@@ -42,6 +42,14 @@ for (let kasu = 1; kasu < 21; kasu++) {
  */
 const test5Array = ['test', 'dummy', 'sample', 'hoge', 'huga'];
 
-// for (const unnko of test5Array) {
+for (let money = 0; money < test5Array.length; money++) {
+  console.log(test5Array[money]);
+}
+
+// for-ofのやりかた
+//for (const unnko of test5Array) {
 //   console.log(unnko);
 // }
+
+// forEachのやりかた
+// test5Array.forEach((unnko) => console.log(unnko));

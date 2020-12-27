@@ -1,19 +1,19 @@
 /**
  * 問1. 宣言されたtest1関数を実行してください
  */
-// function test1() {
-//   console.log('----- これが出力されれば成功');
-// }
-// test1();
+function test1() {
+  console.log('----- これが出力されれば成功');
+}
+test1();
 
 /**
  * 問2. 実行されるtest2関数を宣言してください。関数内ではconsoleで自分のslack名を出力してください
  */
-// function test2() {
-//   console.log('kyoheiきょへ');
-// }
+function test2() {
+  console.log('kyoheiきょへ');
+}
 
-// test2();
+test2();
 
 /**
  * 問3. 下記test3関数は実行されるかどうか、推測・確認してください
@@ -28,7 +28,8 @@ test3;
  * 問3. 回答欄
  *何も表示されていない
   test3()にすれば実行結果が出てくる。
-  つまり引数が設定していないので、ただの文字と認識しているため
+  つまり引数()が設定していないので、ただの変数と認識しているため
+  関数の名前と認識されていないから
  *
  */
 
@@ -37,11 +38,11 @@ test3;
  * '引数を入れた実行結果'
  * という文字列が表示されるように引数を入れてください
  */
-// function test4(arg) {
-//   console.log(arg);
-// }
+function test4(arg) {
+  console.log(arg);
+}
 
-// test4('引数を入れた実行結果');
+test4('引数を入れた実行結果');
 
 /**
  * 問5. 下記test5関数の引数にデフォルトの値を付与しました。
@@ -55,8 +56,8 @@ test5();
 /**
  * 問5. 回答欄
  *default paramと出力される！
- argが引数として指定されており、戻り値を設定していなくても
- 出力されるから
+ argが引数として指定されており、引数arg = 'default param'と格納しているから
+ 逆に 「= 'default param'」を消すとundefinedになる
 
  *
  */
@@ -75,8 +76,9 @@ test6(testFunc);
 
 /**
  * 問6. 回答欄
- *
- *
+ * 実行できる
+ *基本的に関数が実行された時にその中身が実行されるという仮定をおいて
+ *今回はtest6の関数名でargFuncを呼び出している
  */
 
 /**
@@ -86,7 +88,7 @@ test6(testFunc);
 
 function test7() {
   let result7 = 8 + 9;
-  return result7
+  return result7;
 }
 const result7 = test7();
 console.log(result7);
@@ -95,6 +97,11 @@ console.log(result7);
  * 問8. 実行された場合、実行結果として2つの引数の数の和が返される関数test8を作成してください。
  * また、この問題は無名関数(即時関数)を使用し、アロー関数として記載してください
  */
+// const test8 = ((aho, boke) => {
+//   console.log(`合計は ${aho + boke} です`);
+// })(5, 3);
+//省略系
+const test8 = ((aho, boke) => console.log(`合計は ${aho + boke} です`))(5, 3);
 
 /**
  * 問9. 無名関数(即時関数)とは何か、説明して下さい
@@ -126,8 +133,9 @@ console.log(result7);
 
 /**
  * 問11. 回答欄
- *number（数値）、string（文字列）、array（配列）など、あらゆる型（データ型を参照）を含む入れ物的な感じ
- *宣言するとvarやletやconst
+ *number（数値）、string（文字列）、array（配列）など、あらゆる型（データ型を参照）を
+ 含む入れ物である
+ *変数の宣言するとvarやletやconstなどがあり、varはほとんど使われていない
  */
 
 /**
@@ -136,6 +144,7 @@ console.log(result7);
 
 /**
  * 問12. 回答欄
- *
+ *関数を呼び出す時、呼び出し側から関数へ値を渡すときに使うもの
+
  *
  */
