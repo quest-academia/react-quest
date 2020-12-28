@@ -4,11 +4,12 @@
  */
 const test1 = [
   {
-    name: 'target',
-    type: 'test',
+    name: "target",
+    type: "test",
   },
 ];
-console.log();
+const answer1 = test1.name;
+console.log(answer1);
 
 /**
  * 問2. 連想配列test2から
@@ -16,23 +17,24 @@ console.log();
  */
 const test2 = [
   {
-    name: 'test1',
-    value: '1',
+    name: "test1",
+    value: "1",
   },
   {
-    name: 'test2',
-    value: '2',
+    name: "test2",
+    value: "2",
   },
   {
-    name: 'test3',
-    value: '3',
+    name: "test3",
+    value: "3",
   },
   {
-    name: 'test4',
-    value: '4',
+    name: "test4",
+    value: "4",
   },
 ];
-console.log();
+const answer2 = test2[2];
+console.log(answer2);
 
 /**
  * 問3. 連想配列test3内にある
@@ -42,20 +44,20 @@ console.log();
  */
 const test3 = [
   {
-    name: 'test1',
-    value: '1',
+    name: "test1",
+    value: "1",
   },
   {
-    name: 'test2',
-    value: '2',
+    name: "test2",
+    value: "2",
   },
   {
-    name: 'test3',
-    value: '3',
+    name: "test3",
+    value: "3",
   },
   {
-    name: 'test4',
-    value: '4',
+    name: "test4",
+    value: "4",
   },
 ];
 console.log();
@@ -66,23 +68,23 @@ console.log();
  * consoleにて表示してください
  * また、filterを使用してください
  */
-const getNum =  '2';
+const getNum = "2";
 const test3 = [
   {
-    name: 'test1',
-    value: '1',
+    name: "test1",
+    value: "1",
   },
   {
-    name: 'test2',
-    value: '2',
+    name: "test2",
+    value: "2",
   },
   {
-    name: 'test3',
-    value: '3',
+    name: "test3",
+    value: "3",
   },
   {
-    name: 'test4',
-    value: '2',
+    name: "test4",
+    value: "2",
   },
 ];
 console.log();
@@ -93,23 +95,23 @@ console.log();
  * consoleにて表示してください
  * また、findを使用してください
  */
-const getNum =  '1';
+const getNum = "1";
 const test3 = [
   {
-    name: 'test1',
-    value: '1',
+    name: "test1",
+    value: "1",
   },
   {
-    name: 'test2',
-    value: '2',
+    name: "test2",
+    value: "2",
   },
   {
-    name: 'test3',
-    value: '3',
+    name: "test3",
+    value: "3",
   },
   {
-    name: 'test4',
-    value: '2',
+    name: "test4",
+    value: "2",
   },
 ];
 console.log();
@@ -120,9 +122,9 @@ console.log();
 
 /**
  * 問6. 回答欄
- * 
- * 
- * 
+ *
+ *
+ *
  */
 
 /**
@@ -131,7 +133,7 @@ console.log();
 
 /**
  * 問6. 回答欄
- * 
- * 
- * 
+ *
+ *
+ *
  */
