@@ -2,25 +2,33 @@
  * 出力結果がどうなるか予想しながら、consoleを表示してください
  */
 const string = 'string';
-// console.log('string: ' + !!string);
+console.log('==========予想：ture')
+console.log('string: ' + !!string);
 
 const num = 6;
-// console.log('num: ' + !!num);
+console.log('==========予想：ture')
+console.log('num: ' + !!num);
 
 const zero = 0;
-// console.log('zero: ' + !!zero);
+console.log('==========予想：false')
+console.log('zero: ' + !!zero);
 
 const emptyString = '';
-// console.log('emptyString: ' + !!emptyString);
+console.log('==========予想：false')
+ console.log('emptyString: ' + !!emptyString);
 
 const nullParam = null;
-// console.log('nullParam: ' + !!nullParam);
+console.log('==========予想：false')
+console.log('nullParam: ' + !!nullParam);
 
 const undefinedParam = undefined;
-// console.log('undefinedParam: ' + !!undefinedParam);
+console.log('==========予想：false')
+ console.log('undefinedParam: ' + !!undefinedParam);
 
 const emptyObject = {};
-// console.log('emptyObject: ' + !!emptyObject);
+console.log('==========予想：false')
+console.log('emptyObject: ' + !!emptyObject);
 
 const emptyArray = [];
-// console.log('emptyArray: ' + !!emptyArray);
+console.log('==========予想：false')
+ console.log('emptyArray: ' + !!emptyArray);
