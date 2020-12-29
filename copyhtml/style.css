@@ -1,0 +1,307 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(75, 80, 86);
+}
+header {
+  height: 70px;
+  position: fixed;
+  box-shadow: 0px 2px 10px rgb(66, 66, 66);
+  background-color: white;
+  z-index: 1;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin:0 185px;
+  width: 1150px;
+}
+
+.header-left {
+  font-size: 18px;
+  color: rgb(91, 91, 91);
+  line-height: 70px;
+}
+
+.header-right {
+  font-size: 12px;
+  line-height: 70px;
+}
+
+.header-right a {
+  margin-right: 23px;
+  color: rgb(91, 91, 91);
+  text-decoration: none;
+}
+
+.header-right a:hover {
+  color: rgb(239, 86, 138);
+}
+
+.top-main {
+  background-color: rgb(105, 168, 23);
+  height: 410px;
+}
+
+.top-text h1{
+  font-size: 53px;
+  margin: 0;
+  color: white;
+  text-align: center;
+  line-height: 410px;
+}
+
+.main-container {
+  width: 1460px;
+  height: 2600px;
+  border-radius: 8px;
+  padding-top: 100px;
+  background-color: white;
+  margin: 0 auto;
+  position: relative;
+  top: -60px;
+  box-shadow: 0px 10px 30px rgb(66, 66, 66);
+}
+.main_details{
+  width: 1350px;
+  margin:0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+article{
+  display: flex;
+  margin-bottom: 55px;
+}
+
+.article-right{
+  width: 432px;
+  margin-top: 15px;
+}
+
+article img{
+  width: 294px;
+  margin-right: 30px;
+  border-radius: 3px;
+  box-shadow: 0px 2px 20px rgb(66, 66, 66);
+}
+
+.title p{
+  font-size: 12px;
+  margin: 0;
+}
+
+.title h2{
+  font-size: 25px;
+  margin: 0;
+}
+.title h2:hover{
+  opacity: 0.8;
+}
+.category{
+  cursor: pointer;
+}
+.category:hover{
+  opacity: 0.8;
+}
+.details {
+  font-size: 14px;
+  color: rgb(137, 137, 137);
+  margin: 0;
+  margin-top: 10px;
+}
+.details span{
+  cursor: pointer;
+  color: rgb(17, 72, 138);
+}
+.details span:hover{
+  color: rgb(239, 86, 138);
+}
+.contributor{
+  display: flex;
+  font-size: 14px;
+}
+.contributor p{
+  margin-right: 3px;
+}
+.page{
+  display: flex;
+  width: 150px;
+  margin: 0 auto;
+}
+.page p{
+  margin: 0;
+  font-size: 12px;
+  color: rgb(137, 137, 137);
+}
+.this_page{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color:rgb(233, 30, 99);
+  box-shadow: 0px 0px 1px  rgb(233, 30, 99);
+  text-align: center;
+  margin-right: 15px;
+  cursor: pointer;
+}
+.this_page p{
+  line-height: 30px;
+  color: white;
+}
+.next_page{
+  display: flex;
+  cursor: pointer;
+}
+.next_page p{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  margin-right: 5px;
+}
+.next_page p:hover{
+  background-color: rgb(233, 233, 233);
+}
+
+
+/* main-right */
+.aboutShiota{
+  width: 265px;
+}
+.aboutShiota img{
+  width: 140px;
+}
+.aboutShiota p{
+  margin: 0;
+  font-size: 14px;
+}
+.shiotaDetails{
+  color: rgb(137, 137, 137);
+  line-height: 23px;
+}
+.sns{
+  color: rgb(11, 62, 125);
+  margin-left: 13px;
+}
+.sns i {
+  margin-top: 20px;
+}
+.sns i:hover{
+  color: rgb(239, 86, 138);
+}
+.serch h3{
+  margin: 30px 0 10px 0;
+}
+.input{
+  display: flex;
+}
+.input-text{
+  margin: 0;
+  color: rgb(137, 137, 137);
+  width: 193px;
+  border-bottom: 1px solid rgb(152, 152, 152);
+  position: relative;
+  margin-right: 25px;
+}
+.input-text p{
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+}
+.serch-icon{
+  width: 42px;
+  height: 40px;
+  background-color: rgb(233, 30, 99);
+  border-radius: 2px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0px 0px 1px  rgb(233, 30, 99);
+}
+.serch-icon :hover{
+  box-shadow: 0px 0px 20px  rgb(233, 30, 99);
+}
+.serch-icon i{
+  color: white;
+  line-height: 42px;
+  font-size: 17px;
+}
+.navi{
+  margin-top: 50px;
+  width: 270px;
+}
+.navi h3{
+  margin: 0;
+}
+.navi ul{
+  list-style: none;
+  padding: 0;
+  color: rgb(11, 62, 125);
+  font-size: 14px;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+.navi li{
+  line-height: 2.4rem;
+  cursor: pointer;
+}
+.navi li:hover{
+  color:  rgb(239, 86, 138);
+}
+.navi span{
+  color: rgb(75, 80, 86);
+  margin-left: 4px;
+}
+.navi div{
+  margin-left: 10px;
+}
+.archives{
+  margin-top: 30px;
+}
+.summary_articles img{
+  width: 260px;
+  border-radius: 3px;
+} 
+.contents{
+  width: 260px;
+  text-align: center;
+  color: rgb(11, 62, 125)
+}
+.articles_category{
+  font-size: 12px;
+}
+.articles_contents{
+  font-size: 18px;
+}
+
+footer{
+  width: 1460px;
+  height: 100px;
+  margin: 0 auto;
+  background-color: rgb(50, 52, 55);
+  color: rgb(214, 214, 214);
+  position: relative;  
+  top: -65px;
+}
+.footer{
+  width: 1160px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.footer_menu{
+  text-align: center;
+  line-height: 100px;
+}
+.footer_menu a{
+  text-decoration: none;
+  color: rgb(214, 214, 214);
+  font-size: 12px;
+  margin-right: 23px;
+}
+.footer_right{
+  line-height: 100px;
+  cursor: pointer;
+}
