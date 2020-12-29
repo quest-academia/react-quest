@@ -1,0 +1,87 @@
+// レスポンシブ の設定
+$sp:768px;
+
+@mixin sp {
+  @media (max-width:($sp)) {
+    @content;
+  }
+}
+
+// レスポンシブ の設定
+$tab:1024px;
+
+@mixin tab {
+  @media (max-width:($tab)) {
+    @content;
+  }
+}
+
+
+
+$link-color: #2962ff !default;
+$link-hover-color: darken($link-color, 5%) !default;
+
+//色の指定
+
+$green_bg:rgb(148, 186, 10);
+$blue_text:rgb(0, 0, 145);
+$footer_bg: rgb(46, 46, 46);
+
+
+body {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  line-height: 1.6;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.pc {
+  display: block;
+}
+
+.sp {
+  display: none;
+}
+
+.flx {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media screen and (max-width: 867px) {
+  /*ウィンドウ幅が最大867pxまでの場合に適用*/
+  .flx {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .pc {
+    display: none;
+  }
+
+  .sp {
+    display: block;
+  }
+
+}
+
+// paddingとmarginはemで指定する
