@@ -1,6 +1,7 @@
 import './App.css';
 import RedButton from './components/training/RedButton.jsx';
 import BigButton from './components/training/BigButton.jsx';
+import FlexibleButton from './components/training/FlexibleButton.jsx';
 
 function App() {
   const domArray = [];
@@ -14,7 +15,7 @@ function App() {
     bigButtonArray.push(
       <BigButton
         buttonWidth="200px"
-        buttonParam={'test'}
+        buttonParam={'Test'}
         buttonColor={colorArray[i - 1]} />
     );
   }
@@ -23,7 +24,7 @@ function App() {
   for (let i = 1; i <= 5; i++) {
     FlexibleButtonArray.push(
       <FlexibleButton
-        buttonWidth={i * 20}
+        buttonWidth={i * 20 + 100}
       />
     );
   }
@@ -33,6 +34,7 @@ function App() {
       <header className="App-header">
         {domArray}
         {bigButtonArray}
+        {FlexibleButtonArray}
       </header>
     </div>
   );
