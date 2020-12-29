@@ -67,3 +67,50 @@ header{
 
 }
 
+/*タイトルのBOX */
+.title-boxed{
+  height:444px;
+  background-color:#86B412;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+.title-boxed h1{
+  color:#ffffff;
+  font-size: 53px;
+  /* padding:60px; */
+}
+
+/* ブログ画面全体 */
+.blogs-view{
+  width: 95%;
+  margin: 0 auto;
+  padding-top:65px;
+  padding-bottom: 70px;
+}
+
+/* ブログ投稿ページ全体 */
+.blog-posts-wrap{
+  width: 750px;
+  
+}
+
+/* ブログタイトル、テキスト、イメージ */
+.row{
+  padding: 15px;
+  display: flex;
+  /* flex-wrap: wrap;
+  flex-direction: row; */
+}
+
+.blog-text,.blog-image{
+  padding: 0 15px 0 15px;
+}
+.text-info a{
+  font-size: 14px;
+}
+
+.entry-title{
+  margin-top: 5px;
+}
+
