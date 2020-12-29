@@ -1,0 +1,239 @@
+body{
+    margin:0;
+    height: 100%;
+}
+
+h1 {
+    margin: 10px 0px;
+}
+
+h2 {
+    margin: 10px 0px;
+}
+
+p {
+    margin: 10px 0px;
+    font-size: 15px;
+}
+
+header {
+    position:fixed;
+    top:0;
+    left:0;
+    background-color: white;
+    height: 70px;
+    width: 100%;
+    padding: 10px 50px 10px 50px;
+    z-index: 1;
+}
+
+.header-container {
+    position: relative;
+    height: 100%;
+    width: 95%;
+}
+
+.header-left {
+    position: absolute;
+    top: 50%;
+    transform : translateY(-50%);
+}
+
+.header-right {
+    right: 0;
+    position: absolute;
+    top: 50%;
+    transform : translateY(-50%);
+}
+
+.header-link {
+    color: black;
+}
+
+#nav {
+    list-style: none;
+    overflow: hidden;
+}
+
+#nav li {
+    width: auto;
+    text-align: center;
+    float: right;
+    padding: 15px;
+}
+
+#nav li a {
+    text-decoration: none;
+}
+
+.body-top-container {
+    position: relative;
+    height: 430px;
+    width: 100%;
+    background-color: lightgreen;
+}
+
+.body-top {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform : translate(-50%,-50%);
+    background-color: lightgreen;
+    color: white;
+}
+
+.body-main-container {
+    position: relative;
+    background-color: white;
+    width: 95%;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    box-shadow: 2px 2px 80px -10px gray 
+}
+
+.body-main{
+    padding: 130px 10px 0px 0px;
+    overflow: hidden;
+}
+
+.body-main-left {
+    float: left;
+    width: 75%;
+}
+
+.body-main-left img {
+    border-radius: 5px;
+}
+
+.contents-container {
+    display: flex;
+    margin: 0px 100px 50px 0px;
+}
+
+.photo-block {
+    box-shadow: 2px 2px 30px -3px gray;
+    height: 240px;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+
+.text-block {
+    margin: 10px 10px 10px 50px;
+}
+
+.community-container {
+    margin-bottom: 100px;
+    margin-left: 20px;
+}
+
+.community-url {
+    color: orange;
+    margin: 0;
+    text-decoration: none;
+}
+
+.pagination-container {
+    text-align: center;
+}
+
+.pagination {
+    display: inline;
+    margin: 0px 15px;
+}
+
+.pagination-now {
+    background-color: orangered;
+    border-radius: 50%;
+    padding: 3px 10px;
+    color: white;
+}
+    
+.body-main-right {
+    float: right;
+    width: 25%;
+}
+
+.teacher-image {
+    width: 150px;
+    height: 150px;
+}
+
+.teacher-name {
+    font-weight: bold;
+}
+
+#icon {
+    list-style: none;
+}
+
+#icon li {
+    margin: 15px 0px 15px 0px;
+}
+
+.search-box {
+    margin-bottom: 50px;
+}
+
+.search-window {
+    width: 70%;
+    height:36px;
+    border: none;
+    box-shadow: 2px 2px 2px -2px gray 
+}
+
+.search-icon {
+    background-color: orangered;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#category {
+    list-style: none;
+    padding: 0 0 0 20px;
+}
+
+#category li {
+    margin: 15px 0px 15px 0px;
+    text-align: left;
+}
+
+#archives {
+    list-style: none;
+    padding: 0 0 0 20px;
+}
+
+#archives li {
+    margin: 15px 0px 15px 0px;
+    text-align: left;
+}
+
+footer {
+    position: relative;
+    background-color: black;
+    height: 100px;
+    width: 100%;
+    color: white;
+}
+
+.footer-left {
+    position: absolute;
+    top: 50%;
+    -webkit-transform : translateY(-50%);
+    transform : translateY(-50%);
+}
+
+.footer-link{
+    color: white;
+}
+
+.footer-right {
+    position: absolute;
+    padding-right: 40px;
+    right: 0;
+    top: 50%;
+    -webkit-transform : translateY(-50%);
+    transform : translateY(-50%);
+}
