@@ -92,11 +92,13 @@ header{
 /* ブログ投稿ページ全体 */
 .blog-posts-wrap{
   width: 750px;
-  
+  display: flex;
+
 }
 
 /* ブログタイトル、テキスト、イメージ */
 .row{
+  width: 100%;
   padding: 15px;
   display: flex;
   /* flex-wrap: wrap;
@@ -114,3 +116,64 @@ header{
   margin-top: 5px;
 }
 
+/* ナビゲーション */
+.nav-links{
+  display: flex;
+  justify-content: center;
+}
+.pagenation{
+  padding: 0 14px 0 14px;
+}
+
+/* サイドバー */
+.sidebar{
+  width: 262px;
+  width: 262px;
+  margin-left: 350px;
+  padding: 0 15px 0 15px;
+}
+.social-icon{
+  list-style: none;
+}
+.search h5{
+  font-size: 18px;
+  font-weight: 700
+}
+.category h5{
+  font-size: 18px;
+  font-weight: 700
+}
+/* .category ul li{
+} */
+.category-item{
+  list-style: none;
+
+}
+.archive h5{
+  font-size: 18px;
+  font-weight: 700
+}
+.side-slider h5{
+  font-size: 18px;
+  font-weight: 700
+}
+footer{
+  background-color:#3c4858;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+footer a{ 
+  color: #ffffff; 
+}
+footer ul{
+  display: flex;
+}
+footer ul li{
+  list-style: none;
+  padding: 15px;
+}
+.copyright{
+  padding: 15px;
+}
