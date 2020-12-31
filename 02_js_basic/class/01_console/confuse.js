@@ -4,7 +4,7 @@
  */
 
 const hoge = 'hoge param';
-console.log(hoge);
+// console.log(hoge);
 
 /**
  * 文字と数値の表示は、差異を持って表示されます
@@ -12,5 +12,5 @@ console.log(hoge);
 const test = '33';
 const huga = 33;
 
-console.log(test);
-console.log(huga);
+// console.log(test);
+// console.log(huga);
