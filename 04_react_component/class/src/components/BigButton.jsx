@@ -3,9 +3,10 @@ import React from "react";
 class BigButton extends React.Component {
   render() {
     return (
-      <button color={this.props.colorParam} width={this.props.widthParam}>
-        {this.props.stringParam}
+      <button style={this.props.styleParam} width={this.props.widthParam}>
+        {this.props.buttonParam}
       </button>
     );
   }
 }
+export default BigButton;
