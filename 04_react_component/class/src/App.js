@@ -1,13 +1,14 @@
-import logo from "./logo.svg";
 import "./App.css";
 import RedButton from "./components/training/RedButton.jsx";
 import BigButton from "./components/BigButton";
 import FlexibleButton from "./components/FlexibleButton";
+import DifficultButton from "./components/DifficultButton";
 
 function App() {
   const domArray = [];
   const bigButtonArray = [];
   const FlexibleButtonArray = [];
+  const DifficultButtonArray = [];
   for (let i = 1; i <= 10; i++) {
     domArray.push(<RedButton buttonParam={i} />);
   }
@@ -44,7 +45,7 @@ function App() {
     );
   });
   /**
-   * 練習問題第４回
+   * 練習問題第3回
    */
   for (let i = 1; i <= 5; i++) {
     const baseWidth = 50;
@@ -53,7 +54,30 @@ function App() {
       <FlexibleButton widthParam={FlexibleButtonWidth} />
     );
   }
-
+  /**
+   * 練習問題第4回
+   */
+  for (let i = 1; i <= 13; i++) {
+    const baseWidth = 50;
+    const DifficultButtonWidth = baseWidth + i * 20;
+    let backgroundColorParam = "blue";
+    let letterParam = i;
+    if (i % 3 === 0) {
+      // 背景を赤く
+      backgroundColorParam = "red";
+    }
+    if (i % 4 === 0) {
+      // 表示文字に「!!」
+      letterParam = "!!";
+    }
+    DifficultButtonArray.push(
+      <DifficultButton
+        letterParam={letterParam}
+        widthParam={DifficultButtonWidth}
+        backgroundColorParam={backgroundColorParam}
+      />
+    );
+  }
   return (
     <div className="App">
       <header className="App-header">
@@ -65,6 +89,7 @@ function App() {
         {/* {domArray} */}
         {bigButtonArray}
         {FlexibleButtonArray}
+        {DifficultButtonArray}
       </header>
     </div>
   );
