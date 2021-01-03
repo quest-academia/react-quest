@@ -3,6 +3,7 @@ import RedButton from "./components/training/RedButton";
 import NumberingButton from "./components/training/NumberingButton";
 import BigButton from "./components/training/BigButton";
 import FlexibleButton from "./components/training/FlexibleButton";
+import DifficultButton from "./components/training/DifficultButton";
 
 function App() {
   // 練習問題1
@@ -16,6 +17,23 @@ function App() {
   for(let i = 1; i <= 5; i++){
     flexibleButtons.push(<FlexibleButton width={(i * 20) + "px"} />);
   }
+
+  // 練習問題4
+  const difficultButton = [];
+  for(let i = 1; i <= 13; i++){
+    const color = (() => {
+      if(i % 3 === 0){
+        return "red";
+      }
+    })()
+    const text = (() => {
+      if(i % 4 === 0){
+        return "!!";
+      }
+      return i;
+    })()
+    difficultButton.push(<DifficultButton color={color} text={text} width={(i * 20) + "px"} />);
+  }  
 
   return (
     <div className="App">
@@ -33,6 +51,9 @@ function App() {
 
         {/* 練習問題3 表示 */}
         {flexibleButtons}
+
+        {/* 練習問題4 表示 */}
+        {difficultButton}
 
       </header>
     </div>
