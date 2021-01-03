@@ -2,9 +2,12 @@ import logo from "./logo.svg";
 import "./App.css";
 import RedButton from "./components/training/RedButton.jsx";
 import BigButton from "./components/BigButton";
+import FlexibleButton from "./components/FlexibleButton";
 
 function App() {
   const domArray = [];
+  const bigButtonArray = [];
+  const FlexibleButtonArray = [];
   for (let i = 1; i <= 10; i++) {
     domArray.push(<RedButton buttonParam={i} />);
   }
@@ -31,14 +34,25 @@ function App() {
     },
   ];
 
-  const buttonColor = [];
   buttonStyle.forEach((param) => {
     const eachParam = {
       backgroundColor: param.backgroundColor,
       width: param.width,
     };
-    buttonColor.push(<BigButton styleParam={eachParam} buttonParam="Test" />);
+    bigButtonArray.push(
+      <BigButton styleParam={eachParam} buttonParam="Test" />
+    );
   });
+  /**
+   * 練習問題第４回
+   */
+  for (let i = 1; i <= 5; i++) {
+    const baseWidth = 50;
+    const FlexibleButtonWidth = baseWidth + i * 20;
+    FlexibleButtonArray.push(
+      <FlexibleButton widthParam={FlexibleButtonWidth} />
+    );
+  }
 
   return (
     <div className="App">
@@ -49,7 +63,8 @@ function App() {
         <RedButton />
         <RedButton />
         {/* {domArray} */}
-        {buttonColor}
+        {bigButtonArray}
+        {FlexibleButtonArray}
       </header>
     </div>
   );
