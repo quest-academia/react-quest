@@ -2,7 +2,7 @@ import React from "react";
 
 class XXXXXX extends React.Component {
   render() {
-    const test = "test Param";
+    // const test = "test Param";
     console.log(this.props);
     return (
       <button
