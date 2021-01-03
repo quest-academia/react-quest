@@ -1,6 +1,7 @@
 import './App.css';
 import RedButton from "./components/training/RedButton";
 import NumberingButton from "./components/training/NumberingButton";
+import BigButton from "./components/training/BigButton";
 
 function App() {
   // 練習問題1
@@ -14,6 +15,13 @@ function App() {
         <RedButton buttonParam={"Red button"} />
         {/* 練習問題1 表示 */}
         {buttons}
+
+        {/* 練習問題2 表示 */}
+        <BigButton text={"Test"} width={"100px"} color={"red"} />
+        <BigButton text={"Test"} width={"120px"} color={"blue"} />
+        <BigButton text={"Test"} width={"140px"} color={"yellow"} />
+        <BigButton text={"Test"} width={"160px"} color={"gray"} />
+        <BigButton text={"Test"} width={"180px"} color={"purple"} />
       </header>
     </div>
   );
