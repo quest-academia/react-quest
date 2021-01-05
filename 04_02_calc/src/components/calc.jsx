@@ -30,6 +30,27 @@ class Calc extends React.Component {
     });
   }
 
+  clickEqualButton() {
+    const { leftParam, rightParam, symbol } = this.state;
+    const leftNum = Number(leftParam);
+    const rightNum = Number(rightParam);
+    let result = 0;
+    if (symbol === "/") {
+      result = leftNum / rightNum;
+    } else if (symbol === 'x') {
+      result = leftNum * rightNum;
+    } else if (symbol === '-') {
+      result = leftNum - rightNum;
+    } else {
+      result = leftNum + rightNum;
+    }
+    this.setState({
+      leftParam: result,
+      rightParam: "",
+      symbol: "",
+    });
+  }
+
   render() {
     const { leftParam, rightParam, symbol } = this.state;
     return (
@@ -101,7 +122,10 @@ class Calc extends React.Component {
               buttonParam={0}
               clickFunc={() => this.clickNumberButton(0)}
             />
-            <Button buttonParam={"="} />
+            <Button
+              buttonParam={"="}
+              clickFunc={() => this.clickEqualButton()}
+            />
             <Button
               buttonParam={"+"}
               clickFunc={() => this.clickSymbolButton("+")}
