@@ -37,9 +37,9 @@ class Calc extends React.Component {
     let result = 0;
     if (symbol === "/") {
       result = leftNum / rightNum;
-    } else if (symbol === 'x') {
+    } else if (symbol === "x") {
       result = leftNum * rightNum;
-    } else if (symbol === '-') {
+    } else if (symbol === "-") {
       result = leftNum - rightNum;
     } else {
       result = leftNum + rightNum;
@@ -51,86 +51,114 @@ class Calc extends React.Component {
     });
   }
 
+  clickClearButton() {
+    this.setState({
+      leftParam: "",
+      rightParam: "",
+      symbol: "",
+    });
+  }
+
   render() {
     const { leftParam, rightParam, symbol } = this.state;
+    const allButtons = [
+      [
+        {
+          buttonParam: 7,
+          func: () => this.clickNumberButton(7),
+        },
+        {
+          buttonParam: 8,
+          func: () => this.clickNumberButton(8),
+        },
+        {
+          buttonParam: 9,
+          func: () => this.clickNumberButton(9),
+        },
+        {
+          buttonParam: "/",
+          func: () => this.clickSymbolButton("/"),
+        },
+        {
+          buttonParam: "C",
+          func: () => this.clickClearButton(),
+        },
+      ],
+      [
+        {
+          buttonParam: 4,
+          func: () => this.clickNumberButton(4),
+        },
+        {
+          buttonParam: 5,
+          func: () => this.clickNumberButton(5),
+        },
+        {
+          buttonParam: 6,
+          func: () => this.clickNumberButton(6),
+        },
+        {
+          buttonParam: "x",
+          func: () => this.clickSymbolButton("x"),
+        },
+      ],
+      [
+        {
+          buttonParam: 1,
+          func: () => this.clickNumberButton(1),
+        },
+        {
+          buttonParam: 2,
+          func: () => this.clickNumberButton(2),
+        },
+        {
+          buttonParam: 3,
+          func: () => this.clickNumberButton(3),
+        },
+        {
+          buttonParam: "-",
+          func: () => this.clickSymbolButton("-"),
+        },
+      ],
+      [
+        {
+          buttonParam: "00",
+          func: () => this.clickNumberButton("00"),
+        },
+        {
+          buttonParam: 0,
+          func: () => this.clickNumberButton(0),
+        },
+        {
+          buttonParam: "=",
+          func: () => this.clickEqualButton(),
+        },
+        {
+          buttonParam: "+",
+          func: () => this.clickSymbolButton("+"),
+        },
+      ],
+    ];
+
     return (
       <div className={css.l_calc}>
         <div>
-          <input type="text" value={`${leftParam} ${symbol} ${rightParam}`} />
+          <input
+            type="text"
+            value={`${leftParam} ${symbol} ${rightParam}`} 
+          />
         </div>
         <div>
-          <div>
-            <Button
-              buttonParam={7}
-              clickFunc={() => this.clickNumberButton(7)}
-            />
-            <Button
-              buttonParam={8}
-              clickFunc={() => this.clickNumberButton(8)}
-            />
-            <Button
-              buttonParam={9}
-              clickFunc={() => this.clickNumberButton(9)}
-            />
-            <Button
-              buttonParam={"/"}
-              clickFunc={() => this.clickSymbolButton("/")}
-            />
-          </div>
-          <div>
-            <Button
-              buttonParam={4}
-              clickFunc={() => this.clickNumberButton(4)}
-            />
-            <Button
-              buttonParam={5}
-              clickFunc={() => this.clickNumberButton(5)}
-            />
-            <Button
-              buttonParam={6}
-              clickFunc={() => this.clickNumberButton(6)}
-            />
-            <Button
-              buttonParam={"x"}
-              clickFunc={() => this.clickSymbolButton("x")}
-            />
-          </div>
-          <div>
-            <Button
-              buttonParam={1}
-              clickFunc={() => this.clickNumberButton(1)}
-            />
-            <Button
-              buttonParam={2}
-              clickFunc={() => this.clickNumberButton(2)}
-            />
-            <Button
-              buttonParam={3}
-              clickFunc={() => this.clickNumberButton(3)}
-            />
-            <Button
-              buttonParam={"-"}
-              clickFunc={() => this.clickSymbolButton("-")}
-            />
-          </div>
-          <div>
-            <Button
-              buttonParam={"00"}
-              clickFunc={() => this.clickNumberButton("00")}
-            />
-            <Button
-              buttonParam={0}
-              clickFunc={() => this.clickNumberButton(0)}
-            />
-            <Button
-              buttonParam={"="}
-              clickFunc={() => this.clickEqualButton()}
-            />
-            <Button
-              buttonParam={"+"}
-              clickFunc={() => this.clickSymbolButton("+")}
-            />
-          </div>
+          {allButtons.map((row) => (
+            <div>
+              {row.map((param) => (
+                <Button
+                  buttonParam={param.buttonParam}
+                  clickFunc={param.func}
+                />
+              ))}
+            </div>
+          ))}
         </div>
       </div>
     );
