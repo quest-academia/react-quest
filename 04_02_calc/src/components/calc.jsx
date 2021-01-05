@@ -13,8 +13,20 @@ class Calc extends React.Component {
   }
 
   clickNumberButton(num) {
+    if (!!this.state.symbol) {
+      this.setState({
+        rightParam: this.state.rightParam + String(num),
+      });
+    } else {
+      this.setState({
+        leftParam: this.state.leftParam + String(num),
+      });
+    }
+  }
+
+  clickSymbolButton(symbol) {
     this.setState({
-      leftParam: num,
+      symbol: symbol,
     });
   }
 
@@ -39,7 +51,10 @@ class Calc extends React.Component {
               buttonParam={9}
               clickFunc={() => this.clickNumberButton(9)}
             />
-            <Button buttonParam={"/"} />
+            <Button
+              buttonParam={"/"}
+              clickFunc={() => this.clickSymbolButton("/")}
+            />
           </div>
           <div>
             <Button
@@ -54,7 +69,10 @@ class Calc extends React.Component {
               buttonParam={6}
               clickFunc={() => this.clickNumberButton(6)}
             />
-            <Button buttonParam={"x"} />
+            <Button
+              buttonParam={"x"}
+              clickFunc={() => this.clickSymbolButton("x")}
+            />
           </div>
           <div>
             <Button
@@ -69,19 +87,25 @@ class Calc extends React.Component {
               buttonParam={3}
               clickFunc={() => this.clickNumberButton(3)}
             />
-            <Button buttonParam={"-"} />
+            <Button
+              buttonParam={"-"}
+              clickFunc={() => this.clickSymbolButton("-")}
+            />
           </div>
           <div>
             <Button
               buttonParam={"00"}
-              clickFunc={() => this.clickNumberButton('00')}
+              clickFunc={() => this.clickNumberButton("00")}
             />
             <Button
               buttonParam={0}
               clickFunc={() => this.clickNumberButton(0)}
             />
             <Button buttonParam={"="} />
-            <Button buttonParam={"+"} />
+            <Button
+              buttonParam={"+"}
+              clickFunc={() => this.clickSymbolButton("+")}
+            />
           </div>
         </div>
       </div>
