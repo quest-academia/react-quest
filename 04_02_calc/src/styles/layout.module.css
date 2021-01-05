@@ -1,0 +1,11 @@
+.l_calc {
+  border: #000;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.l_button {
+  border-radius: 4px;
+  color: #fff;
+  background-color: #777;
+}
