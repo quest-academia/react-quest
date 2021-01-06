@@ -2,28 +2,39 @@
  * 問1. 宣言されたtest1関数を実行してください
  */
 function test1() {
-  console.log("----- これが出力されれば成功");
+    console.log("----- これが出力されれば成功");
 }
+
+// 問1.回答欄
+test1();
+// ----- これが出力されれば成功
 
 /**
  * 問2. 実行されるtest2関数を宣言してください。関数内ではconsoleで自分のslack名を出力してください
  */
 
-// test2();
+function test2() {
+    console.log("fuku");
+}
+
+test2();
+
+// 問2.回答欄
+// fuku
 
 /**
  * 問3. 下記test3関数は実行されるかどうか、推測・確認してください
  * 確認後、実行結果に対して、なぜこの実行結果になったのか説明してください
  */
 function test3() {
-  console.log("====================");
+    console.log("====================");
 }
 
 test3;
 /**
  * 問3. 回答欄
- *
- *
+ * 関数の実行時にtest3;に()が無いため実行されない
+ * test3();にして実行するとconsole.log内の値が抽出される
  */
 
 /**
@@ -31,60 +42,82 @@ test3;
  * '引数を入れた実行結果'
  * という文字列が表示されるように引数を入れてください
  */
-function test4(arg) {
-  console.log(arg);
+function test4() {
+    console.log('引数を入れた実行結果');
 }
 
 test4();
+
+// 問4. 回答欄
+// 引数を入れた実行結果
 
 /**
  * 問5. 下記test5関数の引数にデフォルトの値を付与しました。
  * 引数のデフォルト値がどのような動きをするのか、検証の上、説明して下さい
  */
 function test5(arg = "default param") {
-  console.log(arg);
+    console.log(arg);
 }
 
 test5();
 /**
  * 問5. 回答欄
- *
- *
+ * test5関数の引数 arg = "default param" が consolo.logで抽出
+ * されてターミナル上で表示される (default param)
  */
 
 /**
  * 問6. 下記test6関数の引数に、値ではなく、関数を入れました。
  * 引数に関数を入れた場合、その関数を実行できるのか検証の上、処理の流れを説明して下さい
  */
+
 function test6(argFunc) {
-  argFunc();
+    argFunc();
 }
+
 function testFunc() {
-  console.log("----- in test func");
+    console.log("----- in test func");
 }
+
 test6(testFunc);
 
 /**
  * 問6. 回答欄
- *
- *
- */
+ * test6(testFunc = argFunc)
+ * ----- in test func を表示する
+ * 流れはいまいち分かりません。真ん中→下→上？/
 
 /**
- * 問7. 下記test8の計算結果を変数result7に格納してください。
+ * 問7. 下記test7の計算結果を変数result7に格納してください。
  * 問題文となるコードを変更して回答してください
  */
-let result7;
+let result7 = test7()
+
 function test7() {
-  return 8 + 9;
+    return 8 + 9;
 }
+
+// 問7. 回答欄
+// console.log(result7);
+// 17
 
 /**
  * 問8. 実行された場合、実行結果として2つの引数の数の和が返される関数test8を作成してください。
  * また、この問題は無名関数(即時関数)を使用し、アロー関数として記載してください
  */
 
+// let sum = function(value) {
+//     console.log(3 + value)
+// };
 
+// sum(5);
+
+// 無名関数を使用してアロー関数として記載
+// let sum = (value) => {
+//     console.log(3 + value);
+// };
+
+// sum(5);
 
 /**
  * 問9. 無名関数(即時関数)とは何か、説明して下さい
@@ -92,8 +125,10 @@ function test7() {
 
 /**
  * 問9. 回答欄
- * 
- * 
+ * 名前付けされずに定義された関数
+ * 主に一度しか使わない関数や関数の名前を考える手間を省きたい時に使用する
+ * また、必ずreturnされるときに使用する
+ * (即時関数→即時に実行される関数)
  */
 
 /**
@@ -102,7 +137,7 @@ function test7() {
 
 /**
  * 問10. 回答欄
- * 
+ * 同じ処理をまとめて定義し、何度も使い回しができるかたちにしたもの
  * 
  */
 
@@ -112,9 +147,10 @@ function test7() {
 
 /**
  * 問11. 回答欄
- * 
- * 
- */
+ * 繰り返し使う値を入れておく箱
+ * let(変数) const(定数)
+ * varは使用しない
+ * /
 
 /**
  * 問12. 引数とは何か、説明してください
@@ -122,6 +158,6 @@ function test7() {
 
 /**
  * 問12. 回答欄
- * 
- * 
+ * 関数の中の値
+ * 実行する時に必要な変動する値
  */
