@@ -8,7 +8,7 @@ const test1 = [
     type: 'test',
   },
 ];
-console.log();
+console.log(test1[0].name);
 
 /**
  * 問2. 連想配列test2から
@@ -32,7 +32,7 @@ const test2 = [
     value: '4',
   },
 ];
-console.log();
+console.log(test2[2]);
 
 /**
  * 問3. 連想配列test3内にある
@@ -40,6 +40,7 @@ console.log();
  * 新しい連想配列を作成してください。
  * 作成した連想配列はconsoleで表示をしてください
  */
+const plus = 1000000;
 const test3 = [
   {
     name: 'test1',
@@ -58,7 +59,10 @@ const test3 = [
     value: '4',
   },
 ];
-console.log();
+const newtest3 = test3.map(obj => {
+  return { name: obj.name, value: Number(obj.value) + plus };
+})
+console.log(newtest3);
 
 /**
  * 問4. 連想配列test4内にある
@@ -67,7 +71,7 @@ console.log();
  * また、filterを使用してください
  */
 const getNum =  '2';
-const test3 = [
+const test4 = [
   {
     name: 'test1',
     value: '1',
@@ -85,7 +89,8 @@ const test3 = [
     value: '2',
   },
 ];
-console.log();
+const newtest4 = test4.filter(obj => obj.value === getNum)
+console.log(newtest4);
 
 /**
  * 問5. 連想配列test5内にある
@@ -93,8 +98,8 @@ console.log();
  * consoleにて表示してください
  * また、findを使用してください
  */
-const getNum =  '1';
-const test3 = [
+const getNum2 =  '1';
+const test5 = [
   {
     name: 'test1',
     value: '1',
@@ -112,7 +117,8 @@ const test3 = [
     value: '2',
   },
 ];
-console.log();
+const found = test5.find(obj => obj.value === getNum2)
+console.log(found);
 
 /**
  * 問6. findとfilterの違いを答えてください
@@ -120,9 +126,9 @@ console.log();
 
 /**
  * 問6. 回答欄
- * 
- * 
- * 
+ * filterは、条件を満たすオブジェクトをすべて取得し、オブジェクトの配列として返す。
+ * findは、条件を満たす最初のオブジェクトを取得して返す。
+ * getNum ='2'にしてtest5.filterとtest5.findを比べるとわかりやすい。
  */
 
 /**
@@ -131,7 +137,6 @@ console.log();
 
 /**
  * 問6. 回答欄
- * 
- * 
- * 
+ * mapは、対象の配列の全ての要素に対して何らかの処理をし、その結果を新しい配列に格納する。
+ * filterは、対象の配列のうち条件を満たす要素だけを抽出して新しい配列に格納する。
  */
