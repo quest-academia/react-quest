@@ -1,6 +1,7 @@
 import './App.css';
 import RedButton from './components/training/RedButton';
 import BigButton from './components/training/BigButton';
+import FlexibleButton from './components/training/FlexibleButton';
 
 function App() {
   //練習問題1
@@ -21,6 +22,8 @@ function App() {
         <BigButton color={"#808080"} width={"150px"} text={"Test"} />
         <BigButton color={"#800080"} width={"150px"} text={"Test"} />
       
+        {/* 練習問題３ */}
+        <FlexibleButton width={100} text={"練習問題３"} />
       </header>
     </div>
   );
