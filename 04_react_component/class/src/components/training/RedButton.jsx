@@ -7,7 +7,7 @@ class RedButton extends React.Component {
       <button style={{ 
         width: '100px',
         height: '100px',
-        backgroundColor: 'red' 
+        backgroundColor: 'red'
       }}
       >
         {this.props.buttonParam}
