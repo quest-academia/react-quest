@@ -4,7 +4,7 @@
 
 const string = 'string';
 console.log('string: ' + !!string);
-// string の反転の反転（true）かどうか検索してる(三項演算子)
+// string の反転の反転（true）かどうか検索してる
 //参考: https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Operators/Logical_NOT
 
 const num = 6;
@@ -18,7 +18,7 @@ console.log('emptyString: ' + !!emptyString);
 
 const nullParam = null;
 console.log('nullParam: ' + !!nullParam);
-//nullはnullという値が入っているのでtrue
+//nullはnullだと明示しているのでtrue
 //console.log(nullParam); nullが格納されてる
 
 const undefinedParam = undefined;
@@ -26,7 +26,7 @@ console.log('undefinedParam: ' + !!undefinedParam);
 
 const emptyObject = {};
 console.log('emptyObject: ' + !!emptyObject);
-//undifinedはfalseになる（変数を宣言し、値を代入する前の状態は空）
+//undifinedは何もない(明示していない)。falseになる（変数を宣言し、値を代入する前の状態は空）
 //console.log(emptyObject); 空のオブジェクト{}
 
 const emptyArray = [];

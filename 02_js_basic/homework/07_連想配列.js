@@ -60,11 +60,15 @@ const test3 = [
     value: '4',
   },
 ];
-  console.log(test3.map((obj)=> obj={
+  console.log(test3.map((obj)=>{
+    const sample={
   name: obj.name,
   value: Number(obj.value) + plus
-}));
-//解法： objでobjの中身を１つずつ操作する
+  }
+  return sample
+  }
+));
+//解法： objでobjの中身を１つずつ操作する key = プロパティ（今回は）
 
 
 /**
