@@ -3,7 +3,7 @@ import App from '../../App';
 
 class DifficultButton extends React.Component {
   render (){
-    if(this.props.param % 3 === 0) {
+    if(this.props.param % 12 === 0 ) {
       return(
         <button style={{ 
             width: this.props.width, 
@@ -11,7 +11,7 @@ class DifficultButton extends React.Component {
             backgroundColor: '#FA5858'
           }}
         >
-          { this.props.param }
+          !!
         </button>
       );
     } else if (this.props.param % 4 === 0){
@@ -24,6 +24,17 @@ class DifficultButton extends React.Component {
         >
           !!
         </button>
+      );
+    }　else if (this.props.param % 3 === 0 ){
+      return(
+        <button style={{ 
+          width: this.props.width, 
+          height: '30px', 
+          backgroundColor: '#FA5858'
+        }}
+      >
+        { this.props.param }
+      </button>
       );
     } else {
     return(
