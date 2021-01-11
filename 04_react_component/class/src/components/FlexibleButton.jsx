@@ -1,19 +1,18 @@
 import React from "react";
 
-class BigButton extends React.Component {
+class FlexibleButton extends React.Component {
   render() {
     return (
       <button
         style={{ 
           width: `${this.props.width}`,
           height: "100px",
-          backgroundColor: `${this.props.backgroundColor}`,
         }}
       >
-        {this.props.text}
+        {this.props.width}
       </button>
     );
   }
 }
 
-export default BigButton;
+export default FlexibleButton;
