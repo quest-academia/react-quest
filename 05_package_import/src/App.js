@@ -1,3 +1,4 @@
+// React-Routerを適用したSPA（Single Page Application）の見た目（View）の土台となるファイル
 import React from "react";
 import {
   BrowserRouter as Router,
@@ -5,6 +6,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import Counter from "./containers/counter";
 
 export default function App() {
   return (
@@ -21,6 +23,9 @@ export default function App() {
             <li>
               <Link to="/users">Users</Link>
             </li>
+            <li>
+              <Link to="/counter">Counter</Link>
+            </li>
           </ul>
         </nav>
 
@@ -32,6 +37,9 @@ export default function App() {
           </Route>
           <Route path="/users">
             <Users />
+          </Route>
+          <Route path="/counter">
+            <Counter />
           </Route>
           <Route path="/">
             <Home />
