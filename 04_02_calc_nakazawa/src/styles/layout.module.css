@@ -52,7 +52,7 @@
 }
 
 .l_button:focus {
-  background-color: #eee;
+  background-color: #eeeeee;
   box-shadow: 10px 3px 29px -17px rgba(0, 0, 0, 0.2) inset,
     -13px -20px 17px -17px rgba(255, 255, 255, 1) inset;
   outline: none;
