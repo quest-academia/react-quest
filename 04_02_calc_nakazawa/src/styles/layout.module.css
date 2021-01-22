@@ -41,23 +41,6 @@
   grid-template-rows: 48px 48px 48px 48px 48px;
 }
 
-.l_button {
-  border: 1px solid #fff;
-  background-color: #f0f0f0;
-  border-radius: 6px;
-  font-size: 20px;
-  color: #666;
-  box-shadow: 2px 2px 24px -11px rgba(0, 0, 0, 0.3),
-    6px 9px 0px 3px rgba(243, 247, 52, 0);
-}
-
-.l_button:focus {
-  background-color: #eeeeee;
-  box-shadow: 10px 3px 29px -17px rgba(0, 0, 0, 0.2) inset,
-    -13px -20px 17px -17px rgba(255, 255, 255, 1) inset;
-  outline: none;
-}
-
 /* ÷ */
 .l_button:nth-of-type(1) {
   grid-column-start: 1;
