@@ -22,7 +22,7 @@ export default BigButton;
 
 
 /**処理2の流れ
- * 1 BigButton.jsx(親要素)にprppsを定義
+ * 1 BigButton.jsx(親要素)にprppsを定義(値を受け取る)
  * 2 App.jsでpropsに値をセットし、新しく格納する配列を用意する
  * 3 forEachで新しい配列にparamを格納する
  */
