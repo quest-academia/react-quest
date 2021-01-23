@@ -1,17 +1,19 @@
 import React from 'react';
 import css from '../styles/layout.module.css';
+import Button from '@material-ui/core/Button';
 
-class Button extends React.Component {
+class ButtonElm extends React.Component {
   render() {
     return (
-      <button 
+      <Button
+      variant="contained"
       className={css.l_button}
       onClick={this.props.clickFunc}
       >
         {this.props.buttonParam}
-      </button>
+      </Button>
     )
-    }
+  }
 }
 
-export default Button;
+export default ButtonElm;

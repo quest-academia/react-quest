@@ -1,6 +1,7 @@
 import React from 'react';
-import Button from './button';
+import ButtonElm from './button';
 import css from '../styles/layout.module.css';
+import TextField from '@material-ui/core/TextField';
 
 class Calc extends React.Component {
   constructor(props) {
@@ -41,9 +42,8 @@ class Calc extends React.Component {
     } else {
       result = leftNum + rightNum;
     }
-    const calcParam = `${leftParam} ${symbol} ${rightParam}`
-    const answerParam = result;
-    this.props.addCalcFunc(calcParam, answerParam)
+    const calcParam = `${leftParam} ${symbol} ${rightParam} = ${result}`
+    this.props.addCalcFunc(calcParam)
     this.setState({
       leftParam: result,
       rightParam: '',
@@ -140,13 +140,13 @@ class Calc extends React.Component {
     return(
     <div className={css.l_calc} >
       <div>
-        <input type='text' value={`${leftParam} ${symbol} ${rightParam}`} />
+        <TextField variant="outlined" value={`${leftParam} ${symbol} ${rightParam}`} />
       </div>
       <div>
         {allButtons.map((row) => (
           <div>
             {row.map((param) => (
-              <Button
+              <ButtonElm
               buttonParam={param.buttonParam}
               clickFunc={param.func}
               />

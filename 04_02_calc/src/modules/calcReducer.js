@@ -2,7 +2,6 @@ import { ADD_CALC } from '../actions';
 
 const initialState = {
     calcParams: [],
-    answerParams: [],
 };
 
 export default function reducer(state = initialState, action) {
@@ -11,7 +10,6 @@ export default function reducer(state = initialState, action) {
         return{
             ...state,
             calcParams: state.calcParams.concat([action.payload.calcParam]),
-            answerParams: state.answerParams.concat([action.payload.answerParam]),
       };
       
       default:
