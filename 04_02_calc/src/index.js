@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-<<<<<<< HEAD
 import { Provider } from 'react-redux';
 import createStore from './store/createStore'
 
@@ -13,12 +12,6 @@ ReactDOM.render(
     <Provider store={store}>
       <App />
     </Provider>
-=======
-
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
->>>>>>> develop
   </React.StrictMode>,
   document.getElementById('root')
 );
