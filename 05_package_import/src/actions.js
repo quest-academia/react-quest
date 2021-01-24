@@ -1,2 +1,5 @@
 export const PUSH_PLUS = 'PUSH_PLUS' ;
 export const PUSH_MINUS = 'PUSH_MINUS';
+
+export const GET_EXPRESS_REQUEST = 'GET_EXPRESS_REQUEST';
+export const GET_EXPRESS_SUCCESS = 'GET_EXPRESS_SUCCESS';

@@ -6,6 +6,7 @@ import{
   Link
 } from 'react-router-dom';
 import Counter from './containers/counter';
+import About from './containers/about';
 
 
 export default function App() {
@@ -54,9 +55,7 @@ function Home() {
   return <h2>Home</h2>;
 }
 
-function About() {
-  return <h2>About</h2>;
-}
+
 
 function Users() {
   return <h2>Users</h2>;

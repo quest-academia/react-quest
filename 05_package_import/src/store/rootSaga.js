@@ -1,12 +1,10 @@
 import { all } from 'redux-saga/effects';
+import exporessController from '../controllers/exporessController';
 
-function* test() {
-  return {};
-}
-function* generatorFunc() {
-  yield test;
-}
+
 
 export default function* routeSaga() {
-  yield all([generatorFunc]);
+  yield all([
+    exporessController(),
+  ]);
 }
