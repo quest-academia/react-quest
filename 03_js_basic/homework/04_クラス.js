@@ -4,7 +4,7 @@
 
 /**
  * 問1. 回答欄
- * 
+ * オブジェクトを作成する設計書のようなもの
  * 
  * 
  */
@@ -17,7 +17,7 @@
 
 /**
  * 問2. 回答欄
- * 
+ * クラスからインスタンス(オブジェクト)を作成すること
  * 
  * 
  */
@@ -31,6 +31,10 @@ class Person {
   name = 'yourName';
 }
 
+const person = new Person;
+
+console.log(person.name);
+
 
 
 /**
@@ -40,8 +44,8 @@ class Person {
 
 /**
  * 問4. 回答欄
- * 
- * 
+ * 自身のクラスを指すもの
+ * 自身のクラスで定義した変数を指定したい時に、「this.変数」の形で使用する
  * 
  */
 
@@ -54,8 +58,8 @@ class Person {
 
 /**
  * 問5. 回答欄
- * 
- * 
+ * クラスをインスタンス化した時に定義される
+ * インスタンス化したときに必ず定義されるものや実行されるものに関してコンストラクタに記述しておく
  * 
  */
 
@@ -69,5 +73,13 @@ class Person {
  * 4. consoleにてconstructorの中にある'test param'を呼び出してください
  */
 
+ class Test6 {
+   constructor(value) {
+     this.hoge = value;
+   }
+ }
+
+ const test6 = new Test6('test param');
+ console.log(test6.hoge);
  
  
