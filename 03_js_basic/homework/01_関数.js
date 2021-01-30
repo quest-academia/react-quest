@@ -5,17 +5,11 @@ function test1() {
   console.log("----- これが出力されれば成功");
 }
 
-test1();
-
 /**
  * 問2. 実行されるtest2関数を宣言してください。関数内ではconsoleで自分のslack名を出力してください
  */
 
- function test2() {
-   console.log('ゆんた');
- }
-
- test2();
+// test2();
 
 /**
  * 問3. 下記test3関数は実行されるかどうか、推測・確認してください
@@ -26,10 +20,9 @@ function test3() {
 }
 
 test3;
-
 /**
  * 問3. 回答欄
- * 関数として呼び出されていないので、何も起きない。
+ *
  *
  */
 
@@ -42,7 +35,7 @@ function test4(arg) {
   console.log(arg);
 }
 
-test4('引数を入れた実行結果');
+test4();
 
 /**
  * 問5. 下記test5関数の引数にデフォルトの値を付与しました。
@@ -55,7 +48,7 @@ function test5(arg = "default param") {
 test5();
 /**
  * 問5. 回答欄
- *　arg に値が格納され、console.logで"default param"が表示される
+ *
  *
  */
 
@@ -73,32 +66,23 @@ test6(testFunc);
 
 /**
  * 問6. 回答欄
- *まず、testFunc関数が引数としてtest6に渡される。
- *その後、test6の関数が実行され、渡されたtestFuncがargFuncの関数の名前で実行される。
- *関数内で処理の順番を制御することが出来る。
+ *
+ *
  */
 
 /**
  * 問7. 下記test8の計算結果を変数result7に格納してください。
  * 問題文となるコードを変更して回答してください
  */
-const result7 = test7();
+let result7;
 function test7() {
   return 8 + 9;
 }
-console.log(result7);
 
 /**
  * 問8. 実行された場合、実行結果として2つの引数の数の和が返される関数test8を作成してください。
  * また、この問題は無名関数(即時関数)を使用し、アロー関数として記載してください
- * 
  */
-
- const test8 = (a, b) => {
-   return a + b;
- }
-
- console.log(test8(1,2));
 
 
 
@@ -108,7 +92,7 @@ console.log(result7);
 
 /**
  * 問9. 回答欄
- * 関数名を記述せずに変数への代入に使用する関数
+ * 
  * 
  */
 
@@ -118,7 +102,7 @@ console.log(result7);
 
 /**
  * 問10. 回答欄
- * 処理を一つにまとめたもの。どこからでも何回で処理をよびだすことができる。
+ * 
  * 
  */
 
@@ -128,7 +112,7 @@ console.log(result7);
 
 /**
  * 問11. 回答欄
- * 数値や文字列を入れておくことが出来るもの
+ * 
  * 
  */
 
@@ -138,6 +122,6 @@ console.log(result7);
 
 /**
  * 問12. 回答欄
- * 関数やプログラムに渡す値の事
+ * 
  * 
  */
