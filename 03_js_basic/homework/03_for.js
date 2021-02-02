@@ -1,19 +1,29 @@
 /**
  * 問1. 1~10の数字をforを使用して、consoleにて表示してください
  */
+for(let i = 0; i <= 10; i++) {
+    console.log(i);
+}
 
 
 
 /**
  * 問2. -1~-10の数字をforを使用して、consoleにて表示してください
  */
+for(let i = -1; i >= -10; i--) {
+    console.log(i);
+}
 
 
 
 /**
  * 問3. 1~20の数字をforを使用して、2の倍数のみconsoleにて表示してください
  */
-
+for(let i = 0; i <= 20; i++) {
+    if((i % 2) === 0) {
+        console.log(i);
+    }
+}
 
 
 /**
@@ -22,7 +32,7 @@
 
 /**
  * 問4. 回答欄
- * 
+ * for文とは、条件式を用いることで繰り返し処理を行う方法
  * 
  */
 
@@ -34,4 +44,8 @@
  * 参考: https://maku77.github.io/js/array/loop.html
  */
 const test5Array = ['test', 'dummy', 'sample', 'hoge', 'huga'];
+const lengthnum = test5Array.length;
+for(let i = 0; i <= lengthnum; i++) {
+    console.log(test5Array[i]);
+}
 

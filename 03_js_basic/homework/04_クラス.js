@@ -4,7 +4,7 @@
 
 /**
  * 問1. 回答欄
- * 
+ * クラスとは、オブジェクトが所持する変数やメソッドなどを定義したもの.
  * 
  * 
  */
@@ -17,7 +17,7 @@
 
 /**
  * 問2. 回答欄
- * 
+ * newとは、newの後に指定された変数や関数を元にインスタンスを作成する演算子。
  * 
  * 
  */
@@ -30,6 +30,8 @@
 class Person {
   name = 'yourName';
 }
+const test = new Person;
+console.log(test.name);
 
 
 
@@ -40,8 +42,8 @@ class Person {
 
 /**
  * 問4. 回答欄
- * 
- * 
+ * thisとは関数を呼び出すオブジェクトへのリンク。
+ * thisは使う場所によって何へのリンクか変わってくる。
  * 
  */
 
@@ -54,9 +56,9 @@ class Person {
 
 /**
  * 問5. 回答欄
- * 
- * 
- * 
+ * クラスからインスタンスを作成する際にインスタンスに関する状態の初期化を行うメソッド。
+ * constructorメソッドに定義した処理は、クラスをインスタンス化したときに自動的に呼び出される。
+ * 使い方はインスタンスの仮引数をインスタンンスの値として使えるようにする。
  */
 
 
@@ -68,6 +70,13 @@ class Person {
  * 3. Test6クラスをnewしたときに、変数に'test param'を格納してください
  * 4. consoleにてconstructorの中にある'test param'を呼び出してください
  */
+class Test6 {
+  constructor(hoge) {
+      this.hoge = hoge;
+  }
+}
 
+let i = new Test6('test param');
+console.log(i.hoge);
  
  
