@@ -1,0 +1,40 @@
+/* PC */
+
+.background {
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.green-background {
+  background-color: #94ba0a;
+  padding: 170px 15px 110px 15px;
+}
+
+
+.text {
+  color: #fff;
+  font-size: 53px;
+  text-align: center;
+}
+
+
+/* タブレット */
+@media screen and (max-width: 991px) {
+  
+}
+
+/* ヘッダーのメニューバーが変わる位置 */
+/* 横の背景が消える位置 */
+@media screen and (max-width: 764px) {
+  .text {
+    color: #fff;
+    font-size: 26px;
+    text-align: center;
+  }
+}
+
+/* スマホ */
+@media screen and (max-width: 480px) {
+  
+}

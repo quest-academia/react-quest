@@ -1,0 +1,10 @@
+.article-container {
+  display: flex;
+}
+
+/* スマホ */
+@media screen and (max-width: 480px) {
+  .article-container {
+    display: inline;
+  }
+}

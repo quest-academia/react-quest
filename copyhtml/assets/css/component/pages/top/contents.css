@@ -1,0 +1,23 @@
+/* PC */
+.container {
+  background-color: #fff;
+  border-radius: 6px 6px 0px 0px;
+  box-shadow: 3px 3px 20px gray;
+}
+
+
+/* タブレット */
+@media screen and (max-width: 991px) {
+  
+}
+
+/* ヘッダーのメニューバーが変わる位置 */
+/* 横の背景が消える位置 */
+@media screen and (max-width: 764px) {
+  
+}
+
+/* スマホ */
+@media screen and (max-width: 480px) {
+  
+}

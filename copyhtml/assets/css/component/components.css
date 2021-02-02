@@ -1,0 +1,166 @@
+/* PC */
+
+.header-component {
+  width: 100%;
+  height: 70px;
+  z-index: 10;
+}
+
+.header-component iframe{
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  z-index: 10;
+}
+
+.background-component {
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.background-component iframe{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.contents-component {
+  width: calc(100% - 60px);
+  height: 2572.140px;
+  z-index: 1;
+  margin-left: auto;
+  margin-right: auto;
+  top: 370px;
+}
+
+.contents-component iframe{
+  position: absolute;
+  width: calc(100% - 60px);
+  height: 2572.140px;
+  z-index: 1;
+  margin-left: auto;
+  margin-right: auto;
+  top: 370px;
+}
+
+.new-articles {
+  width: 749.990px;
+  height: 2502.140px;
+}
+
+.new-articles iframe {
+  width: 749.990px;
+  height: 2502.140px;
+}
+
+@media screen and (max-width: 1188px) {
+  .contents-component {
+    width: calc(100% - 30px);
+    height: 2433.820px;
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .contents-component iframe{
+    position: absolute;
+    width: calc(100% - 30px);
+    height: 2433.820px;
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .new-articles {
+    width: 616.667px;
+    height: 2363.820px;
+  }
+  
+  .new-articles iframe {
+    width: 616.667px;
+    height: 2363.820px;
+  }
+}
+
+/* タブレット */
+@media screen and (max-width: 991px) {
+  .contents-component {
+    width: calc(100% - 30px);
+    height: 5616.880px;
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .contents-component iframe{
+    position: absolute;
+    width: calc(100% - 30px);
+    height: 5616.880px;
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .new-articles {
+    width: 720px;
+    height: 2697.220px;
+  }
+  
+  .new-articles iframe {
+    width: 720px;
+    height: 2697.220px;
+  }
+}
+
+/* ヘッダーのメニューバーが変わる位置 */
+/* 横の背景が消える位置 */
+@media screen and (max-width: 764px) {
+  .contents-component {
+    width: 100%;
+    height: 5616.880px;
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .contents-component iframe{
+    position: absolute;
+    width: 100%;
+    height: 5616.880px;
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .new-articles {
+    width: 720px;
+    height: 2697.220px;
+  }
+  
+  .new-articles iframe {
+    width: 720px;
+    height: 2697.220px;
+  }
+}
+
+/* スマホ */
+@media screen and (max-width: 480px) {
+  .contents-component {
+    width: 100%;
+    height: 7470.770px;
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .contents-component iframe{
+    position: absolute;
+    width: 100%;
+    height: 7470.770px;
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

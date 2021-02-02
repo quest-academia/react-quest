@@ -1,0 +1,52 @@
+/* PC */
+.flexbox {
+  display: flex;
+}
+
+.mg0 {
+  margin: 0px;
+}
+
+.pd0 {
+  padding: 0px;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.hei0 {
+  height: 0px;
+}
+
+.h100 {
+  height: 100%;
+}
+
+.w100 {
+  width: 100%;
+}
+
+/* タブレット */
+@media screen and (max-width: 991px) {
+  
+}
+
+/* ヘッダーのメニューバーが変わる位置 */
+/* 横の背景が消える位置 */
+@media screen and (max-width: 764px) {
+  
+}
+
+/* スマホ */
+@media screen and (max-width: 480px) {
+  
+}
