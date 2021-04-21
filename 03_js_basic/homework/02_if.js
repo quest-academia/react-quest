@@ -49,8 +49,6 @@ const base2 = 'false';
 const test5 = base2 ? 'left param' : 'right param';
 console.log(test5);
 
-
-
 /**
  * 問6. if文とは何か、説明してください
  */
