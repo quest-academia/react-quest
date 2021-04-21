@@ -5,11 +5,17 @@ function test1() {
   console.log("----- これが出力されれば成功");
 }
 
+test1();
+
 /**
  * 問2. 実行されるtest2関数を宣言してください。関数内ではconsoleで自分のslack名を出力してください
  */
 
 // test2();
+const test2 = () => {
+  console.log("佐藤佳幸");
+};
+test2();
 
 /**
  * 問3. 下記test3関数は実行されるかどうか、推測・確認してください
@@ -22,7 +28,7 @@ function test3() {
 test3;
 /**
  * 問3. 回答欄
- *
+ * test3();まで入力しないと実行されない
  *
  */
 
@@ -31,11 +37,12 @@ test3;
  * '引数を入れた実行結果'
  * という文字列が表示されるように引数を入れてください
  */
+const arg = "引数を入れた実行結果";
 function test4(arg) {
   console.log(arg);
 }
 
-test4();
+test4(arg);
 
 /**
  * 問5. 下記test5関数の引数にデフォルトの値を付与しました。
@@ -48,7 +55,7 @@ function test5(arg = "default param") {
 test5();
 /**
  * 問5. 回答欄
- *
+ *argにdefault paramが代入されていて、それがconsole.logされている関数test5を実行しているので、default paramが出力される。
  *
  */
 
@@ -66,7 +73,7 @@ test6(testFunc);
 
 /**
  * 問6. 回答欄
- *
+ *test6の引数にtestFuncが入るため、testFunc関数が呼び出される。testFunc関数が呼び出されると、console.log("----- in test func")が出力される。
  *
  */
 
@@ -74,26 +81,28 @@ test6(testFunc);
  * 問7. 下記test8の計算結果を変数result7に格納してください。
  * 問題文となるコードを変更して回答してください
  */
-let result7;
 function test7() {
   return 8 + 9;
 }
-
+let result7 = test7();
+console.log(result7);
 /**
  * 問8. 実行された場合、実行結果として2つの引数の数の和が返される関数test8を作成してください。
  * また、この問題は無名関数(即時関数)を使用し、アロー関数として記載してください
  */
 
-
+const test8=((a,b)=>{
+  console.log(a+b);
+})();
 
 /**
  * 問9. 無名関数(即時関数)とは何か、説明して下さい
- */
-
+ *
+*/
 /**
  * 問9. 回答欄
- * 
- * 
+ *関数を名前無しに定義できる関数。
+ *
  */
 
 /**
@@ -102,8 +111,8 @@ function test7() {
 
 /**
  * 問10. 回答欄
- * 
- * 
+ *
+ *関数とは、処理に名前をつけてまとめたものです。
  */
 
 /**
@@ -112,8 +121,8 @@ function test7() {
 
 /**
  * 問11. 回答欄
- * 
- * 
+ *
+ *値や文字列を格納して億はこのようなもの。
  */
 
 /**
@@ -122,6 +131,6 @@ function test7() {
 
 /**
  * 問12. 回答欄
- * 
- * 
+ *プログラムや関数に渡す値のこと。
+ *
  */
