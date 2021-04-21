@@ -2,13 +2,13 @@
  * それぞれの宣言方法によって、表示内容が異なるか予想してください
  */
 let huga = 'this is let';
-// console.log(huga);
+console.log(huga);
 
 var hoge = 'This is var';
-// console.log(hoge);
+console.log(hoge);
 
 const sample = 'this is const';
-// console.log(sample);
+console.log(sample);
 
 
 /**

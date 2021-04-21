@@ -4,7 +4,7 @@ const sampleObj = {
 };
 
 // console.log(sampleObj);
-// console.log(sampleObj.value);
+ console.log(sampleObj.value);
 
 /**
  * 存在しないものを指定すると、
