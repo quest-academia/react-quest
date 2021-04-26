@@ -9,7 +9,9 @@ const second = false;
 const third = true;
 // 変数の前に、! が付いているとtrue, falseが逆になる
 // さらに ! を付けることで、さらに逆になる
-// console.log('third: ' + !!third);
+console.log('third: ' + !!third);
 
 const fours= false;
-// console.log('fours: ' + !!fours);
+console.log('fours: ' + !!fours);
+
+console.log(!!'test');

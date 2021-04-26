@@ -1,5 +1,5 @@
 const first = true;
-// console.log(typeof first);
+// console.log(first);
 
 const second = false;
 // console.log(typeof second);
@@ -13,10 +13,10 @@ const third = 'param' === 'param'
 // console.log('third: ' + third);
 
 const four = 7 === '7';
-// console.log('four: ' + four);
+console.log('four: ' + four);
 
 /**
  * 文字列のみ一致
  */
 const five = 7 == '7';
-// console.log('five: ' + five);
+console.log('five: ' + five);

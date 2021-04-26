@@ -10,5 +10,5 @@ const sampleObj = {
  * 存在しないものを指定すると、
  * undefinedが返ってきます
  */
-// console.log(sampleObj.dummy)
+console.log(sampleObj.dummy)
 

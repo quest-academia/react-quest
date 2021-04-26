@@ -1,7 +1,7 @@
 const two = 2;
 
 const stringNum = two + '3';
-// console.log(stringNum);
+// console.log(typeof stringNum);
 
 const numStringString = '2' + '3';
 // console.log(numStringString);
@@ -16,4 +16,4 @@ const result = 'result: ' + assinned;
  * バックスラッシュはshift + @
  */
 const escape = `result: ${assinned}`;
-// console.log(escape);
+console.log(escape);
