@@ -2,8 +2,6 @@ import React from "react";
 
 class RedButton extends React.Component {
   render() {
-    console.log(this.props);
-
     return (
       <button
         style={{ 
@@ -12,7 +10,7 @@ class RedButton extends React.Component {
           backgroundColor: "red"
         }}
       >
-        {this.props.buttonParam}
+        {this.props.param}
       </button>
     );
   }
