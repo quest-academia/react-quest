@@ -4,10 +4,10 @@
 
 /**
  * 問1. 回答欄
+ * メソッドやコンストラクタを定義できるもの
+ * まとめて使い回せ、内容を引き継げる。
  * 
- * 
- * 
- */
+ *
 
 
 
@@ -17,8 +17,8 @@
 
 /**
  * 問2. 回答欄
- * 
- * 
+ * newは値をセットし、引数としてclassに渡すもの。
+ * インスタンスとして扱えるようにする。
  * 
  */
 
@@ -31,7 +31,8 @@ class Person {
   name = 'yourName';
 }
 
-
+const person = new Person();
+console.log(person.name);
 
 /**
  * 問4. thisとは何か、説明して下さい
@@ -40,8 +41,8 @@ class Person {
 
 /**
  * 問4. 回答欄
- * 
- * 
+ * classに定義されたプロパティを指し示す。
+ * ex: this.○○
  * 
  */
 
@@ -54,8 +55,13 @@ class Person {
 
 /**
  * 問5. 回答欄
- * 
- * 
+ * インスタンスを生成し、初期化を明示するもの。
+ * class Person {
+ *  constructor(){
+ *  this.name = 'yourName';
+ *  }
+  }
+
  * 
  */
 
@@ -69,5 +75,10 @@ class Person {
  * 4. consoleにてconstructorの中にある'test param'を呼び出してください
  */
 
- 
- 
+class Test6 {
+  constructor(hoge){
+    this.hoge = hoge;
+  }
+}
+const result = new Test6("test param");
+console.log(result.hoge);
