@@ -9,7 +9,7 @@ const numStringString = '2' + '3';
 
 const assinned = 'sample';
 
-const result = 'result: ' + assinned; 
+const result = 'result: ' + assinned;
 // console.log(result);
 
 /**

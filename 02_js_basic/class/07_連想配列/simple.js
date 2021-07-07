@@ -17,6 +17,6 @@ const kantoCity = [
   },
 ];
 
-// console.log(kantoCity); 
-// console.log(kantoCity[0]); 
-// console.log(kantoCity[1].kanzi);
+// console.log(kantoCity);
+// console.log(kantoCity[0]);
+console.log(kantoCity[1].name);

@@ -2,27 +2,34 @@
  * 問1. 宣言されたtest1関数を実行してください
  */
 function test1() {
-  console.log("----- これが出力されれば成功");
+  console.log('----- これが出力されれば成功');
 }
+test1();
 
 /**
  * 問2. 実行されるtest2関数を宣言してください。関数内ではconsoleで自分のslack名を出力してください
  */
+function test2() {
+  console.log('kyoheiきょへ');
+}
 
-// test2();
+test2();
 
 /**
  * 問3. 下記test3関数は実行されるかどうか、推測・確認してください
  * 確認後、実行結果に対して、なぜこの実行結果になったのか説明してください
  */
 function test3() {
-  console.log("====================");
+  console.log('====================');
 }
 
 test3;
 /**
  * 問3. 回答欄
- *
+ *何も表示されていない
+  test3()にすれば実行結果が出てくる。
+  つまり引数()が設定していないので、ただの変数と認識しているため
+  関数の名前と認識されていないから
  *
  */
 
@@ -35,20 +42,23 @@ function test4(arg) {
   console.log(arg);
 }
 
-test4();
+test4('引数を入れた実行結果');
 
 /**
  * 問5. 下記test5関数の引数にデフォルトの値を付与しました。
  * 引数のデフォルト値がどのような動きをするのか、検証の上、説明して下さい
  */
-function test5(arg = "default param") {
+function test5(arg = 'default param') {
   console.log(arg);
 }
 
 test5();
 /**
  * 問5. 回答欄
- *
+ *default paramと出力される！
+ argが引数として指定されており、引数arg = 'default param'と格納しているから
+ 逆に 「= 'default param'」を消すとundefinedになる
+
  *
  */
 
@@ -60,40 +70,50 @@ function test6(argFunc) {
   argFunc();
 }
 function testFunc() {
-  console.log("----- in test func");
+  console.log('----- in test func');
 }
 test6(testFunc);
 
 /**
  * 問6. 回答欄
- *
- *
+ * 実行できる
+ *基本的に関数が実行された時にその中身が実行されるという仮定をおいて
+ *今回はtest6の関数名でargFuncを呼び出している
  */
 
 /**
  * 問7. 下記test8の計算結果を変数result7に格納してください。
  * 問題文となるコードを変更して回答してください
  */
-let result7;
+
 function test7() {
-  return 8 + 9;
+  let result7 = 8 + 9;
+  return result7;
 }
+const result7 = test7();
+console.log(result7);
 
 /**
  * 問8. 実行された場合、実行結果として2つの引数の数の和が返される関数test8を作成してください。
  * また、この問題は無名関数(即時関数)を使用し、アロー関数として記載してください
  */
-
-
+// const test8 = ((aho, boke) => {
+//   console.log(`合計は ${aho + boke} です`);
+// })(5, 3);
+//省略系
+const test8 = ((aho, boke) => console.log(`合計は ${aho + boke} です`))(5, 3);
 
 /**
  * 問9. 無名関数(即時関数)とは何か、説明して下さい
- */
+ *
+ /
 
 /**
  * 問9. 回答欄
- * 
- * 
+ *関数名なしで関数を定義できるものでreturnされる時に使う
+ 変数に関数の定義そのものを = で直接入れることができるようになるので
+ 1回きりしか使わない関数なので、名前をつける必要がない（=無名）ということ
+ *
  */
 
 /**
@@ -102,8 +122,9 @@ function test7() {
 
 /**
  * 問10. 回答欄
- * 
- * 
+ *複数の処理をひとまとまりにしたもの
+ *関数を使うメリット
+  用途ごとに処理を分割したり、似たような処理を何度も書かなくて済むようになる
  */
 
 /**
@@ -112,8 +133,9 @@ function test7() {
 
 /**
  * 問11. 回答欄
- * 
- * 
+ *number（数値）、string（文字列）、array（配列）など、あらゆる型（データ型を参照）を
+ 含む入れ物である
+ *変数の宣言するとvarやletやconstなどがあり、varはほとんど使われていない
  */
 
 /**
@@ -122,6 +144,7 @@ function test7() {
 
 /**
  * 問12. 回答欄
- * 
- * 
+ *関数を呼び出す時、呼び出し側から関数へ値を渡すときに使うもの
+
+ *
  */

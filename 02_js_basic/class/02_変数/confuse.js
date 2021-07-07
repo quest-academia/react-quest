@@ -11,5 +11,5 @@ var hoge = 'This is var';
 // console.log(hoge);
 
 const sample = 'this is const';
-// sample = 'overWrite';
-// console.log(sample);
+sample = 'overWrite';
+console.log(sample);

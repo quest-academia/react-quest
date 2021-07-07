@@ -11,4 +11,3 @@ const sampleObj = {
  * undefinedが返ってきます
  */
 // console.log(sampleObj.dummy)
-
