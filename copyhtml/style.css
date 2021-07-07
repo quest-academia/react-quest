@@ -1,0 +1,38 @@
+.header-title {
+  height: 70px;
+}
+
+.main-back {
+  background-color: #9fbf06;
+}
+.title-h1 {
+  text-align: center;
+}
+
+a {
+  color: #23527c;
+}
+
+.connunity {
+  padding: 80px;
+  color: #ffffff;
+}
+
+.article {
+  display: flex;
+  min-height: 50px;
+}
+
+.article a {
+  color: #9fbf06;
+}
+
+/* 検索アイコンの色 */
+.search i {
+  color: #e92662;
+}
+
+/* categoryとArchives */
+.category ul {
+  list-style: none;
+}
