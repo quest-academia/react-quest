@@ -1,0 +1,179 @@
+/* 初期設定 */
+*:before, *:after {
+  box-sizing: border-box;
+}
+
+
+body{
+  width: 100%;
+  color: #3c4858;
+  font-family: Arial,Helvetica,sans-serif;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 300;
+  line-height: 1.618;
+  font-size: 14px;
+}
+
+/* リンクの基本設定 */
+a{
+  text-decoration: none;
+}
+.wrapper-default{
+  width: 100%;
+}
+
+/* ヘッダー */
+header{
+  display: flex;
+  height: 70px;
+  /* display: block; */
+  justify-content: space-between;
+}
+.title-logo-wrapper{
+  margin-left: 5%;
+}
+.title-logo-wrapper p{
+  /* margin-left: -90%; */
+  padding: 10px;
+  font-size: 18px;
+  color: #555555;
+  text-decoration: none;
+  line-height: 10px;
+}
+/* ナビゲーション */
+.navbar{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  line-height: 10px;
+  margin-right: 5%;
+  margin-left: 10px;
+  padding: 15px 15px;
+  /* padding: 10px; */
+}
+
+.header-list a{
+  font-size: 12px;
+  color: #555555;
+  text-decoration: none;
+    padding: 15px;
+    border-radius: 3px;
+
+}
+
+.header-list a:hover{
+  color: #e91e63;
+
+}
+
+/*タイトルのBOX */
+.title-boxed{
+  height:444px;
+  background-color:#86B412;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+.title-boxed h1{
+  color:#ffffff;
+  font-size: 53px;
+  /* padding:60px; */
+}
+
+/* ブログ画面全体 */
+.blogs-view{
+  width: 95%;
+  margin: 0 auto;
+  padding-top:65px;
+  padding-bottom: 70px;
+}
+
+/* ブログ投稿ページ全体 */
+.blog-posts-wrap{
+  width: 750px;
+  display: flex;
+
+}
+
+/* ブログタイトル、テキスト、イメージ */
+.row{
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  /* flex-wrap: wrap;
+  flex-direction: row; */
+}
+
+.blog-text,.blog-image{
+  padding: 0 15px 0 15px;
+}
+.text-info a{
+  font-size: 14px;
+}
+
+.entry-title{
+  margin-top: 5px;
+}
+
+/* ナビゲーション */
+.nav-links{
+  display: flex;
+  justify-content: center;
+}
+.pagenation{
+  padding: 0 14px 0 14px;
+}
+
+/* サイドバー */
+.sidebar{
+  width: 262px;
+  width: 262px;
+  margin-left: 350px;
+  padding: 0 15px 0 15px;
+}
+.social-icon{
+  list-style: none;
+}
+.search h5{
+  font-size: 18px;
+  font-weight: 700
+}
+.category h5{
+  font-size: 18px;
+  font-weight: 700
+}
+/* .category ul li{
+} */
+.category-item{
+  list-style: none;
+
+}
+.archive h5{
+  font-size: 18px;
+  font-weight: 700
+}
+.side-slider h5{
+  font-size: 18px;
+  font-weight: 700
+}
+footer{
+  background-color:#3c4858;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+footer a{ 
+  color: #ffffff; 
+}
+footer ul{
+  display: flex;
+}
+footer ul li{
+  list-style: none;
+  padding: 15px;
+}
+.copyright{
+  padding: 15px;
+}
